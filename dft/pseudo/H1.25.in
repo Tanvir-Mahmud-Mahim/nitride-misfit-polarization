@@ -1,0 +1,18 @@
+ &input
+   title='H1.25',
+   zed=1.25,
+   rel=1,
+   config='1s1.25',
+   iswitch=3,
+   dft='PBESOL'
+ /
+ &inputp
+   pseudotype=1,
+   file_pseudopw='H1.25.pbesol-nc.UPF',
+   author='generated for this work with ld1.x',
+   lloc=0,
+   tm=.true.,
+   zval=1.25
+ /
+1
+1S  1  0  1.25  0.00  1.00  1.00  0.0

@@ -1,0 +1,24 @@
+{
+ "source": "C. E. Dreyer, A. Janotti, C. G. Van de Walle and D. Vanderbilt, Phys. Rev. X 6, 021038 (2016), Table I (P_eff, H reference and ZB reference) and Table II (proper and improper e31, e33); HSE hybrid functional. Copied without change. C13/C33 is not taken from that paper; scripts use the PBEsol value of results/dft_polarization.json with this set.",
+ "GaN": {
+  "P_H": 1.312,
+  "P_ZB": -0.035,
+  "e31_proper": -0.551,
+  "e31_improper": -1.863,
+  "e33": 1.02
+ },
+ "AlN": {
+  "P_H": 1.351,
+  "P_ZB": -0.09,
+  "e31_proper": -0.676,
+  "e31_improper": -2.027,
+  "e33": 1.569
+ },
+ "InN": {
+  "P_H": 1.026,
+  "P_ZB": -0.053,
+  "e31_proper": -0.604,
+  "e31_improper": -1.63,
+  "e33": 1.238
+ }
+}

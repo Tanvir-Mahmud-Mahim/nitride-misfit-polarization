@@ -1,0 +1,45 @@
+{
+ "source": "C. P. Jiang, S. L. Guo, Z. M. Huang, J. Yu, Y. S. Gui, G. Z. Zheng, J. H. Chu, Z. W. Zheng, B. Shen and Y. D. Zheng, Appl. Phys. Lett. 79, 374 (2001), doi:10.1063/1.1386620, Table I and text. Values copied without change.",
+ "structure_from_text": "Atmospheric-pressure MOCVD on c-plane sapphire: GaN nucleation layer at 488 C, 2.0 um undoped GaN at 1071 C, 3 nm undoped Al0.22Ga0.78N spacer, Si-doped Al0.22Ga0.78N barrier of 25, 50, 75 and 100 nm grown at 1080 C. Shubnikov-de Haas oscillations at 1.4 K up to 9 T; subband densities from the Fourier transform, n = 4.84e10 * P (cm^-2, P in tesla). Relaxation was not measured.",
+ "same_recipe_as": "Shen, Someya and Arakawa, Appl. Phys. Lett. 76, 2746 (2000) (same nucleation, buffer and barrier growth temperatures, spacer and Al content); the paper does not say whether the samples are the same.",
+ "t_nm": [
+  25,
+  50,
+  75,
+  100
+ ],
+ "n0_1e12": [
+  9.67,
+  10.6,
+  9.84,
+  9.34
+ ],
+ "n1_1e12": [
+  null,
+  null,
+  1.93,
+  1.7
+ ],
+ "total_text_1e12": [
+  9.67,
+  10.6,
+  11.8,
+  11.0
+ ],
+ "mu_q0_cm2Vs": [
+  5506,
+  6055,
+  7216,
+  7485
+ ],
+ "mu_q1_cm2Vs": [
+  null,
+  null,
+  8217,
+  2437
+ ],
+ "notes": [
+  "The text gives totals of 9.67e12, 1.06e13, 1.18e13 and 1.1e13 cm^-2; Table I gives n0 + n1 = 9.67, 10.6, 11.77 and 11.04 (1e12 cm^-2).",
+  "Comparison with Shen et al. (same recipe): for any scattering the transport time is at least half the quantum time, so Jiang's ground-subband quantum mobility of 7485 cm^2/Vs for 100 nm implies a 2DEG transport mobility of at least about 3700 cm^2/Vs, three times the Hall mobility Shen et al. report for their 100 nm sample (about 1100 cm^2/Vs at 10-77 K). Their 77 K Hall density for 100 nm (0.645e13) is also lower than Jiang's SdH density (1.10e13); a low-mobility parallel channel would raise, not lower, a Hall density. The two series are therefore very probably different samples grown with the same recipe, and the 100 nm samples differ in their state of relaxation or defects."
+ ]
+}

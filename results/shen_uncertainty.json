@@ -1,0 +1,189 @@
+{
+ "description": "Statistical error bar of the line charge from the Shen series, with labplan.",
+ "labplan_version": "0.6.0",
+ "readings_1e12": [
+  13.02,
+  11.319999999999999,
+  12.14,
+  10.59,
+  6.45
+ ],
+ "settings_t_R": [
+  [
+   25.0,
+   0.0
+  ],
+  [
+   35.0,
+   0.0
+  ],
+  [
+   50.0,
+   0.0
+  ],
+  [
+   65.0,
+   0.0
+  ],
+  [
+   100.0,
+   0.78
+  ]
+ ],
+ "Lambda_bulk_e_per_nm": -2.6450815743313365,
+ "R_sigma": 0.05,
+ "phi": {
+  "0.5": {
+   "fit_A": {
+    "values": {
+     "dsig_1e12cm2": -2.722737263953934,
+     "Lambda_e_per_nm": -0.8448566143029012
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.6004989651172293,
+     "Lambda_e_per_nm": 0.5116510500995259
+    },
+    "residual_sd_1e12": 1.0681876020013619,
+    "fraction_of_bulk": 0.319406638533058,
+    "fraction_sigma": 0.19343488499543746
+   },
+   "fit_B": {
+    "values": {
+     "dsig_1e12cm2": -2.722737263953934,
+     "Lambda_e_per_nm": -0.8448566143029012
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.6004989651172293,
+     "Lambda_e_per_nm": 0.5323733875570534
+    },
+    "chi2": 2.999999999999999,
+    "dof": 3,
+    "goodness": {
+     "chi2": 2.999999999999999,
+     "dof": 3,
+     "reduced_chi2": 0.9999999999999997,
+     "p_value": 0.39162517627108895,
+     "p_value_low": 0.608374823728911,
+     "birge_ratio": 0.9999999999999998
+    },
+    "R_adjusted": 0.78,
+    "fraction_of_bulk": 0.319406638533058,
+    "fraction_sigma": 0.2012691754990019
+   }
+  },
+  "1.0": {
+   "fit_A": {
+    "values": {
+     "dsig_1e12cm2": -2.454670770162483,
+     "Lambda_e_per_nm": -0.9469240668271082
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.7659828374216243,
+     "Lambda_e_per_nm": 0.6648025224347638
+    },
+    "residual_sd_1e12": 1.3941850696919462,
+    "fraction_of_bulk": 0.3579942773849936,
+    "fraction_sigma": 0.2513353572313827
+   },
+   "fit_B": {
+    "values": {
+     "dsig_1e12cm2": -2.454670770162483,
+     "Lambda_e_per_nm": -0.9469240668271082
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.7659828374216244,
+     "Lambda_e_per_nm": 0.6823229051284988
+    },
+    "chi2": 3.0,
+    "dof": 3,
+    "goodness": {
+     "chi2": 3.0,
+     "dof": 3,
+     "reduced_chi2": 1.0,
+     "p_value": 0.39162517627108884,
+     "p_value_low": 0.6083748237289112,
+     "birge_ratio": 1.0
+    },
+    "R_adjusted": 0.78,
+    "fraction_of_bulk": 0.3579942773849936,
+    "fraction_sigma": 0.25795911615912126
+   }
+  },
+  "1.5": {
+   "fit_A": {
+    "values": {
+     "dsig_1e12cm2": -2.0804253718479737,
+     "Lambda_e_per_nm": -1.0894196099854188
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.9637293567589283,
+     "Lambda_e_per_nm": 0.8517349800013008
+    },
+    "residual_sd_1e12": 1.7937745218624919,
+    "fraction_of_bulk": 0.4118661672129407,
+    "fraction_sigma": 0.3220070746762036
+   },
+   "fit_B": {
+    "values": {
+     "dsig_1e12cm2": -2.0804250862223506,
+     "Lambda_e_per_nm": -1.089419708488511
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.9637293488928357,
+     "Lambda_e_per_nm": 0.8671474290276222
+    },
+    "chi2": 2.9999999999992593,
+    "dof": 3,
+    "goodness": {
+     "chi2": 2.9999999999992593,
+     "dof": 3,
+     "reduced_chi2": 0.9999999999997531,
+     "p_value": 0.39162517627120297,
+     "p_value_low": 0.608374823728797,
+     "birge_ratio": 0.9999999999998765
+    },
+    "R_adjusted": 0.7800000001228501,
+    "fraction_of_bulk": 0.41186620445303695,
+    "fraction_sigma": 0.32783390779777694
+   }
+  },
+  "2.0": {
+   "fit_A": {
+    "values": {
+     "dsig_1e12cm2": -1.593192004974832,
+     "Lambda_e_per_nm": -1.274935792242093
+    },
+    "sigma": {
+     "dsig_1e12cm2": 1.1738475999521525,
+     "Lambda_e_per_nm": 1.0389044824654061
+    },
+    "residual_sd_1e12": 2.1886631256439975,
+    "fraction_of_bulk": 0.4820024473401696,
+    "fraction_sigma": 0.3927684093206999
+   },
+   "fit_B": {
+    "values": {
+     "dsig_1e12cm2": -1.593192004974832,
+     "Lambda_e_per_nm": -1.274935792242093
+    },
+    "sigma": {
+     "dsig_1e12cm2": 1.1738475999521525,
+     "Lambda_e_per_nm": 1.0534834267300401
+    },
+    "chi2": 2.9999999999999996,
+    "dof": 3,
+    "goodness": {
+     "chi2": 2.9999999999999996,
+     "dof": 3,
+     "reduced_chi2": 0.9999999999999999,
+     "p_value": 0.39162517627108895,
+     "p_value_low": 0.608374823728911,
+     "birge_ratio": 0.9999999999999999
+    },
+    "R_adjusted": 0.78,
+    "fraction_of_bulk": 0.4820024473401696,
+    "fraction_sigma": 0.398280127524867
+   }
+  }
+ }
+}

@@ -1,0 +1,1548 @@
+{
+ "description": "A second series with measured relaxation: Elwaradi et al., J. Appl. Phys.\n133, 145705 (2023) (data/elwaradi2023_tables.json).",
+ "data": "data/elwaradi2023_tables.json",
+ "f_Shen": {
+  "PBEsol": 0.31325546873917676,
+  "HSE": 0.2104741823844428
+ },
+ "cases": {
+  "PBEsol/phi_0.5/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 18226116403193.6,
+     "dn_ddsig": 0.9357028645212226,
+     "dsig_to_match": -8791376744798.91
+    },
+    "200": {
+     "n_model_dsig0": 17003803259128.625,
+     "dn_ddsig": 0.9347181790965605,
+     "dsig_to_match": -8562798325870.365
+    },
+    "100": {
+     "n_model_dsig0": 15118313435251.467,
+     "dn_ddsig": 0.93208595693908,
+     "dsig_to_match": -7636971013518.564
+    },
+    "50": {
+     "n_model_dsig0": 11791095923892.557,
+     "dn_ddsig": 0.9259550206771127,
+     "dsig_to_match": -4310248159758.379
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -8330382028062.613,
+    "50 nm": -4310248159758.379,
+    "all four": -7325348560986.555
+   },
+   "rms_all_four_after_mean_cal": 0.20295686337114055,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 9891647654633.31,
+       "electron counting": 5106650399781.688,
+       "neutral": 5274044055819.12,
+       "bound (Shen fraction)": 6716924142175.877,
+       "trapped (Shen magnitude)": 3838908735944.777
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2286570447891.8926,
+       "electron counting": 46502.40552183165,
+       "neutral": 147801.6330660261,
+       "bound (Shen fraction)": 3066690053.572518,
+       "trapped (Shen magnitude)": 7.199030775625975
+      },
+      "50 nm": {
+       "bare ends": 5931334402378.456,
+       "electron counting": 1249154101301.4546,
+       "neutral": 1405097796516.1946,
+       "bound (Shen fraction)": 2792291682530.128,
+       "trapped (Shen magnitude)": 201616873644.535
+      },
+      "all four": {
+       "bare ends": 3186268020880.5117,
+       "electron counting": 26607753.538467087,
+       "neutral": 84724467.60449404,
+       "bound (Shen fraction)": 280608882985.0763,
+       "trapped (Shen magnitude)": 4046.3190302019957
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -1.7840791658724384,
+      "thick (500-100 nm)": 2.5906695443858108,
+      "50 nm": 0.47398596466741527,
+      "all four": 2.0647488600761266
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 11730243677657.762,
+       "electron counting": 5740734863753.907,
+       "neutral": 5950409569825.743,
+       "bound (Shen fraction)": 7757232468576.438,
+       "trapped (Shen magnitude)": 4152527072018.0977
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 4083741876192.4644,
+       "electron counting": 3709614.22589854,
+       "neutral": 15773065.826006312,
+       "bound (Shen fraction)": 363352625602.51544,
+       "trapped (Shen magnitude)": 63.31143357481482
+      },
+      "50 nm": {
+       "bare ends": 7763122788086.232,
+       "electron counting": 1847197142403.538,
+       "neutral": 2048373590991.5132,
+       "bound (Shen fraction)": 3814534339277.5044,
+       "trapped (Shen magnitude)": 419689318950.93805
+      },
+      "all four": {
+       "bare ends": 4999459580320.524,
+       "electron counting": 2110619762.8677216,
+       "neutral": 8616437905.640207,
+       "bound (Shen fraction)": 1144912249493.5144,
+       "trapped (Shen magnitude)": 35750.964820777954
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -1.7407159387843927,
+      "thick (500-100 nm)": 1.7601983035211517,
+      "50 nm": 0.07219119210167284,
+      "all four": 1.3354770873645014
+     }
+    }
+   }
+  },
+  "PBEsol/phi_1/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 16932920569869.346,
+     "dn_ddsig": 0.9342257278781679,
+     "dsig_to_match": -7421033657053.668
+    },
+    "200": {
+     "n_model_dsig0": 15711882592432.3,
+     "dn_ddsig": 0.9331221364548477,
+     "dsig_to_match": -7192930410945.275
+    },
+    "100": {
+     "n_model_dsig0": 13829754445039.176,
+     "dn_ddsig": 0.9301372214832168,
+     "dsig_to_match": -6267628378254.688
+    },
+    "50": {
+     "n_model_dsig0": 10511029078212.83,
+     "dn_ddsig": 0.9242995594485375,
+     "dsig_to_match": -2933063259091.354
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -6960530815417.878,
+    "50 nm": -2933063259091.354,
+    "all four": -5953663926336.247
+   },
+   "rms_all_four_after_mean_cal": 0.20295056953751836,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 8620639741278.713,
+       "electron counting": 3848760111688.1104,
+       "neutral": 4015042315615.833,
+       "bound (Shen fraction)": 5451449763776.968,
+       "trapped (Shen magnitude)": 2594194000567.0166
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2276535209519.3813,
+       "electron counting": 43313.887945650225,
+       "neutral": 137662.15371263822,
+       "bound (Shen fraction)": 2859370777.3954396,
+       "trapped (Shen magnitude)": 6.707436103909718
+      },
+      "50 nm": {
+       "bare ends": 5927647596433.344,
+       "electron counting": 1245801176030.8936,
+       "neutral": 1401703869170.125,
+       "bound (Shen fraction)": 2788721399855.601,
+       "trapped (Shen magnitude)": 199470980434.88095
+      },
+      "all four": {
+       "bare ends": 3177715962530.7075,
+       "electron counting": 25067516.00349418,
+       "neutral": 79819271.71507747,
+       "bound (Shen fraction)": 274780509062.10437,
+       "trapped (Shen magnitude)": 3813.016167880922
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -1.0630406869558309,
+      "thick (500-100 nm)": 2.596642157572788,
+      "50 nm": 0.47608559955914925,
+      "all four": 2.0696505541195025
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 10457868927943.732,
+       "electron counting": 4479116459703.564,
+       "neutral": 4687803562974.269,
+       "bound (Shen fraction)": 6489166805010.549,
+       "trapped (Shen magnitude)": 2903520370238.9756
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 4073443347963.289,
+       "electron counting": 3454783.2521314616,
+       "neutral": 14688951.113016162,
+       "bound (Shen fraction)": 355790221351.3783,
+       "trapped (Shen magnitude)": 58.983710163955024
+      },
+      "50 nm": {
+       "bare ends": 7759400335989.661,
+       "electron counting": 1843721667843.7117,
+       "neutral": 2044871524718.6294,
+       "bound (Shen fraction)": 3810910332758.8843,
+       "trapped (Shen magnitude)": 416927507867.44226
+      },
+      "all four": {
+       "bare ends": 4990773846783.306,
+       "electron counting": 1989791206.8718565,
+       "neutral": 8142033455.858971,
+       "bound (Shen fraction)": 1136984658629.4873,
+       "trapped (Shen magnitude)": 33687.53582175968
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -1.15932727142143,
+      "thick (500-100 nm)": 1.7649478719696157,
+      "50 nm": 0.07385972086436617,
+      "all four": 1.339387707000149
+     }
+    }
+   }
+  },
+  "PBEsol/phi_1.5/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 15641659659238.521,
+     "dn_ddsig": 0.9325932048485046,
+     "dsig_to_match": -6049432517744.95
+    },
+    "200": {
+     "n_model_dsig0": 14422043325103.213,
+     "dn_ddsig": 0.9313458897905696,
+     "dsig_to_match": -5821728945754.471
+    },
+    "100": {
+     "n_model_dsig0": 12543743409687.982,
+     "dn_ddsig": 0.927989743737375,
+     "dsig_to_match": -4896329340223.701
+    },
+    "50": {
+     "n_model_dsig0": 9233134100500.836,
+     "dn_ddsig": 0.9223824443680576,
+     "dsig_to_match": -1553730894653.686
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -5589163601241.041,
+    "50 nm": -1553730894653.686,
+    "all four": -4580305424594.202
+   },
+   "rms_all_four_after_mean_cal": 0.20292551670775139,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 7351128319421.578,
+       "electron counting": 2603911943167.637,
+       "neutral": 2767819446393.0996,
+       "bound (Shen fraction)": 4191392169408.1436,
+       "trapped (Shen magnitude)": 1381771181681.1829
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2267848671041.4155,
+       "electron counting": 40732.26557994806,
+       "neutral": 129452.68728280447,
+       "bound (Shen fraction)": 2691110286.5258994,
+       "trapped (Shen magnitude)": 6.309373239822668
+      },
+      "50 nm": {
+       "bare ends": 5925929516901.46,
+       "electron counting": 1244266724798.9739,
+       "neutral": 1400149659571.9602,
+       "bound (Shen fraction)": 2787077625555.969,
+       "trapped (Shen magnitude)": 198496375353.4163
+      },
+      "all four": {
+       "bare ends": 3170674885417.5225,
+       "electron counting": 23867916.51966532,
+       "neutral": 75998708.1778814,
+       "bound (Shen fraction)": 270017865544.26108,
+       "trapped (Shen magnitude)": 3631.3287688164273
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -0.3300690072798708,
+      "thick (500-100 nm)": 2.6018140120901703,
+      "50 nm": 0.47705030976613616,
+      "all four": 2.073685489354422
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 9186393947532.422,
+       "electron counting": 3226496289491.284,
+       "neutral": 3433220002834.626,
+       "bound (Shen fraction)": 5224460893130.973,
+       "trapped (Shen magnitude)": 1679593387788.7278
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 4064524764332.3633,
+       "electron counting": 3248463.9654951612,
+       "neutral": 13811218.903104866,
+       "bound (Shen fraction)": 349282946466.119,
+       "trapped (Shen magnitude)": 55.4794821738638
+      },
+      "50 nm": {
+       "bare ends": 7757653210206.287,
+       "electron counting": 1842127514858.367,
+       "neutral": 2043263925728.5781,
+       "bound (Shen fraction)": 3809235527864.3433,
+       "trapped (Shen magnitude)": 415669317879.512
+      },
+      "all four": {
+       "bare ends": 4983618621192.386,
+       "electron counting": 1895548624.6612613,
+       "neutral": 7770496243.434922,
+       "bound (Shen fraction)": 1130465606851.898,
+       "trapped (Shen magnitude)": 32080.59197199234
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -0.5766612465013149,
+      "thick (500-100 nm)": 1.7690600987116123,
+      "50 nm": 0.07462616569913115,
+      "all four": 1.3426062184176493
+     }
+    }
+   }
+  },
+  "PBEsol/phi_2/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 14352523221781.166,
+     "dn_ddsig": 0.9307687160366817,
+     "dsig_to_match": -4676267204504.575
+    },
+    "200": {
+     "n_model_dsig0": 13134504684450.926,
+     "dn_ddsig": 0.9293458645281504,
+     "dsig_to_match": -4448833144106.265
+    },
+    "100": {
+     "n_model_dsig0": 11260535344272.65,
+     "dn_ddsig": 0.9256098084108653,
+     "dsig_to_match": -3522580805264.484
+    },
+    "50": {
+     "n_model_dsig0": 7957616925777.26,
+     "dn_ddsig": 0.9199351268615267,
+     "dsig_to_match": -171334826962.18976
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -4215893717958.4414,
+    "50 nm": -171334826962.18976,
+    "all four": -3204753995209.3784
+   },
+   "rms_all_four_after_mean_cal": 0.20285991670502038,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 6083973292426.034,
+       "electron counting": 1391085835617.4875,
+       "neutral": 1548530121901.601,
+       "bound (Shen fraction)": 2941940606737.3804,
+       "trapped (Shen magnitude)": 300345864188.8784
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2260852789566.7505,
+       "electron counting": 38767.606081930375,
+       "neutral": 123205.05435979966,
+       "bound (Shen fraction)": 2562791570.715247,
+       "trapped (Shen magnitude)": 6.006469168295588
+      },
+      "50 nm": {
+       "bare ends": 5927019190026.754,
+       "electron counting": 1245324992210.6082,
+       "neutral": 1401218648366.418,
+       "bound (Shen fraction)": 2788181371881.0176,
+       "trapped (Shen magnitude)": 199182000678.8663
+      },
+      "all four": {
+       "bare ends": 3165612055582.7407,
+       "electron counting": 23043199.780100256,
+       "neutral": 73371839.9194223,
+       "bound (Shen fraction)": 266617830992.83112,
+       "trapped (Shen magnitude)": 3506.4854386069924
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 0.38593590450223636,
+      "thick (500-100 nm)": 2.6059805864284575,
+      "50 nm": 0.4763961945520567,
+      "all four": 2.076585372735438
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 7916173009835.824,
+       "electron counting": 1993595609153.6658,
+       "neutral": 2195715507790.676,
+       "bound (Shen fraction)": 3965816442232.061,
+       "trapped (Shen magnitude)": 540233503913.84406
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 4057337098174.9824,
+       "electron counting": 3091443.435556285,
+       "neutral": 13143198.006108038,
+       "bound (Shen fraction)": 344070571012.6498,
+       "trapped (Shen magnitude)": 52.812910595761636
+      },
+      "50 nm": {
+       "bare ends": 7758723233504.034,
+       "electron counting": 1843216204546.85,
+       "neutral": 2044357998381.6213,
+       "bound (Shen fraction)": 3810340672356.4707,
+       "trapped (Shen magnitude)": 416550703258.2767
+      },
+      "all four": {
+       "bare ends": 4978467595108.195,
+       "electron counting": 1830674131.8056297,
+       "neutral": 7513939597.299319,
+       "bound (Shen fraction)": 1125786535522.125,
+       "trapped (Shen magnitude)": 30976.283330448772
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 0.002182186899265602,
+      "thick (500-100 nm)": 1.7723725941639512,
+      "50 nm": 0.07410592075746182,
+      "all four": 1.3449189424014922
+     }
+    }
+   }
+  },
+  "HSE/phi_0.5/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 11147575347388.582,
+     "dn_ddsig": 0.925067458021989,
+     "dsig_to_match": -1240531528200.5132
+    },
+    "200": {
+     "n_model_dsig0": 10071908954539.117,
+     "dn_ddsig": 0.9233141747514603,
+     "dsig_to_match": -1160936313825.85
+    },
+    "100": {
+     "n_model_dsig0": 8394934946903.708,
+     "dn_ddsig": 0.9190438839783174,
+     "dsig_to_match": -429723709377.3267
+    },
+    "50": {
+     "n_model_dsig0": 5369646232523.192,
+     "dn_ddsig": 0.9105737250125376,
+     "dsig_to_match": 2669035686751.6074
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -943730517134.5634,
+    "50 nm": 2669035686751.6074,
+    "all four": -40538966163.02063
+   },
+   "rms_all_four_after_mean_cal": 0.17859823399739813,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 4385511692885.1074,
+       "electron counting": 71649342634.9937,
+       "neutral": 164182719490.7929,
+       "bound (Shen fraction)": 904047173808.1056,
+       "trapped (Shen magnitude)": 638811474.8957791
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3528705935134.44,
+       "electron counting": 293774492.7367961,
+       "neutral": 1237295501.575845,
+       "bound (Shen fraction)": 220096673185.3786,
+       "trapped (Shen magnitude)": 1649125.950603377
+      },
+      "50 nm": {
+       "bare ends": 6827262899479.172,
+       "electron counting": 2096389229188.87,
+       "neutral": 2298556247916.9404,
+       "bound (Shen fraction)": 3238033274404.3643,
+       "trapped (Shen magnitude)": 1382002686816.6072
+      },
+      "all four": {
+       "bare ends": 4348603607007.745,
+       "electron counting": 59930491109.09878,
+       "neutral": 144660901607.7905,
+       "bound (Shen fraction)": 871151877978.9598,
+       "trapped (Shen magnitude)": 494813912.43215823
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 1.3425120204724659,
+      "thick (500-100 nm)": 1.8349254126358419,
+      "50 nm": -0.054341672416636545,
+      "all four": 1.363761269150059
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 6303605059023.32,
+       "electron counting": 527506594311.35504,
+       "neutral": 746352249450.9879,
+       "bound (Shen fraction)": 1852563688291.6106,
+       "trapped (Shen magnitude)": 23033774977.952274
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5439302535415.515,
+       "electron counting": 35589390425.3643,
+       "neutral": 121964652859.19897,
+       "bound (Shen fraction)": 1044420709927.2621,
+       "trapped (Shen magnitude)": 68563358.58209963
+      },
+      "50 nm": {
+       "bare ends": 8755450515731.977,
+       "electron counting": 2804528369965.587,
+       "neutral": 3060952951543.132,
+       "bound (Shen fraction)": 4248151519835.0635,
+       "trapped (Shen magnitude)": 1893621395369.5356
+      },
+      "all four": {
+       "bare ends": 6266439324641.743,
+       "electron counting": 497734588243.5911,
+       "neutral": 714439008424.2002,
+       "bound (Shen fraction)": 1817089574908.5244,
+       "trapped (Shen magnitude)": 18381135220.436325
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 0.7138696555306285,
+      "thick (500-100 nm)": 1.1121931475728186,
+      "50 nm": -0.4044820388572301,
+      "all four": 0.731126768753444
+     }
+    }
+   }
+  },
+  "HSE/phi_1/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 9867976812141.184,
+     "dn_ddsig": 0.9219579468391426,
+     "dsig_to_match": 143198709129.24728
+    },
+    "200": {
+     "n_model_dsig0": 8794493031045.616,
+     "dn_ddsig": 0.9198444744895846,
+     "dsig_to_match": 223414908339.17136
+    },
+    "100": {
+     "n_model_dsig0": 7123044065217.189,
+     "dn_ddsig": 0.9149311683717812,
+     "dsig_to_match": 958493890139.7887
+    },
+    "50": {
+     "n_model_dsig0": 4106287005167.808,
+     "dn_ddsig": 0.8986915882530349,
+     "dsig_to_match": 4110100776632.832
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": 441702502536.0691,
+    "50 nm": 4110100776632.832,
+    "all four": 1358802071060.2598
+   },
+   "rms_all_four_after_mean_cal": 0.1793102860892534,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 3133720917556.719,
+       "electron counting": 18540559.33203487,
+       "neutral": 78456490.12256482,
+       "bound (Shen fraction)": 44470494456.45592,
+       "trapped (Shen magnitude)": 104343.8799444535
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3532537101957.977,
+       "electron counting": 301852008.78391904,
+       "neutral": 1271091592.6449986,
+       "bound (Shen fraction)": 222521855913.18723,
+       "trapped (Shen magnitude)": 1694587.8729252308
+      },
+      "50 nm": {
+       "bare ends": 6882161415029.986,
+       "electron counting": 2149303286921.7893,
+       "neutral": 2351750039688.128,
+       "bound (Shen fraction)": 3292052598860.5103,
+       "trapped (Shen magnitude)": 1433289204933.8958
+      },
+      "all four": {
+       "bare ends": 4365108739421.9595,
+       "electron counting": 65010457598.07381,
+       "neutral": 153271153267.20145,
+       "bound (Shen fraction)": 885883122272.4088,
+       "trapped (Shen magnitude)": 554970904.4823633
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 2.071569602224417,
+      "thick (500-100 nm)": 1.8327174452239516,
+      "50 nm": -0.08578166342674445,
+      "all four": 1.3542424344826864
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 5039408462243.733,
+       "electron counting": 2778976794.014902,
+       "neutral": 15540362500.485632,
+       "bound (Shen fraction)": 691347882085.7715,
+       "trapped (Shen magnitude)": 4326297.066937724
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5443149674560.085,
+       "electron counting": 36377624032.40887,
+       "neutral": 123798205952.52798,
+       "bound (Shen fraction)": 1047962646000.1925,
+       "trapped (Shen magnitude)": 70451932.54134339
+      },
+      "50 nm": {
+       "bare ends": 8810448503862.256,
+       "electron counting": 2858240704401.5947,
+       "neutral": 3114858631923.918,
+       "bound (Shen fraction)": 4302616308682.101,
+       "trapped (Shen magnitude)": 1946194907714.2466
+      },
+      "all four": {
+       "bare ends": 6283033441765.602,
+       "electron counting": 511042874537.99475,
+       "neutral": 728724354235.4437,
+       "bound (Shen fraction)": 1832981136401.0413,
+       "trapped (Shen magnitude)": 20355977687.153393
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 1.2941452269535314,
+      "thick (500-100 nm)": 1.1104150321069306,
+      "50 nm": -0.4296334629221235,
+      "all four": 0.7233964864451268
+     }
+    }
+   }
+  },
+  "HSE/phi_1.5/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 8592192525434.794,
+     "dn_ddsig": 0.9180860473682695,
+     "dsig_to_match": 1533415608047.571
+    },
+    "200": {
+     "n_model_dsig0": 7521292727808.816,
+     "dn_ddsig": 0.915433680198373,
+     "dsig_to_match": 1615307918177.9177
+    },
+    "100": {
+     "n_model_dsig0": 5855985556794.049,
+     "dn_ddsig": 0.9092086638321434,
+     "dsig_to_match": 2358110440973.2896
+    },
+    "50": {
+     "n_model_dsig0": 2852495615794.6787,
+     "dn_ddsig": 0.8573145274348467,
+     "dsig_to_match": 5770932634267.436
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": 1835611322399.5928,
+    "50 nm": 5770932634267.436,
+    "all four": 2819441650366.5537
+   },
+   "rms_all_four_after_mean_cal": 0.185019184344076,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 1903047932451.4158,
+       "electron counting": 3044.9816677595322,
+       "neutral": 12840.11230436105,
+       "bound (Shen fraction)": 9617168.376756879,
+       "trapped (Shen magnitude)": 17.385866467033477
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3544039570128.4487,
+       "electron counting": 327193104.6912219,
+       "neutral": 1377085872.7725449,
+       "bound (Shen fraction)": 229809311005.70267,
+       "trapped (Shen magnitude)": 1837038.4013300932
+      },
+      "50 nm": {
+       "bare ends": 7138826154411.884,
+       "electron counting": 2397381507036.181,
+       "neutral": 2600985459721.915,
+       "bound (Shen fraction)": 3544773128761.0996,
+       "trapped (Shen magnitude)": 1674819712474.7268
+      },
+      "all four": {
+       "bare ends": 4437437375736.525,
+       "electron counting": 90652361930.4297,
+       "neutral": 193681686072.2686,
+       "bound (Shen fraction)": 950682349257.6656,
+       "trapped (Shen magnitude)": 915402834.722089
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 2.792600707755462,
+      "thick (500-100 nm)": 1.82610743725773,
+      "50 nm": -0.23243461294326834,
+      "all four": 1.3125769211401417
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 3781892783323.8496,
+       "electron counting": 458722.4733889022,
+       "neutral": 2780060.588778234,
+       "bound (Shen fraction)": 10327272545.987864,
+       "trapped (Shen magnitude)": 713.3204331005638
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5454751998351.433,
+       "electron counting": 38806886882.12111,
+       "neutral": 129346565786.51323,
+       "bound (Shen fraction)": 1058543925781.7013,
+       "trapped (Shen magnitude)": 76375160.80583511
+      },
+      "50 nm": {
+       "bare ends": 9067651588137.578,
+       "electron counting": 3109650152624.823,
+       "neutral": 3367090756452.6616,
+       "bound (Shen fraction)": 4557276767951.641,
+       "trapped (Shen magnitude)": 2192876915065.8726
+      },
+      "all four": {
+       "bare ends": 6355831693689.143,
+       "electron counting": 570096079356.2095,
+       "neutral": 791707043843.9951,
+       "bound (Shen fraction)": 1902606124742.399,
+       "trapped (Shen magnitude)": 31303235466.54081
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 1.8761779350452008,
+      "thick (500-100 nm)": 1.1050923430158728,
+      "50 nm": -0.5463889188976404,
+      "all four": 0.6895518752228814
+     }
+    }
+   }
+  },
+  "HSE/phi_2/cap_1": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 7321031152521.535,
+     "dn_ddsig": 0.9130175066870332,
+     "dsig_to_match": 2934192200979.088
+    },
+    "200": {
+     "n_model_dsig0": 6253273610726.672,
+     "dn_ddsig": 0.9094419668310426,
+     "dsig_to_match": 3020232724518.2197
+    },
+    "100": {
+     "n_model_dsig0": 4595152563528.4795,
+     "dn_ddsig": 0.8998789591983506,
+     "dsig_to_match": 3783672683607.026
+    },
+    "50": {
+     "n_model_dsig0": 1618853853172.6885,
+     "dn_ddsig": 0.5396145276995239,
+     "dsig_to_match": 11454743765292.377
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": 3246032536368.1113,
+    "50 nm": 11454743765292.377,
+    "all four": 5298210343599.178
+   },
+   "rms_all_four_after_mean_cal": 0.278389004117499,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 736538782388.677,
+       "electron counting": 0.5127436326568374,
+       "neutral": 2.152839265285601,
+       "bound (Shen fraction)": 1582.374275038128,
+       "trapped (Shen magnitude)": 0.0029752505261379284
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3570489054047.8076,
+       "electron counting": 393592623.0923789,
+       "neutral": 1654321450.7153006,
+       "bound (Shen fraction)": 246872185513.6523,
+       "trapped (Shen magnitude)": 2210312.4362566303
+      },
+      "50 nm": {
+       "bare ends": 11097282100224.479,
+       "electron counting": 6304636762181.49,
+       "neutral": 6514023885240.322,
+       "bound (Shen fraction)": 7476853695612.506,
+       "trapped (Shen magnitude)": 5553071238437.978
+      },
+      "all four": {
+       "bare ends": 5439379886966.478,
+       "electron counting": 805223236933.4496,
+       "neutral": 990716772600.6675,
+       "bound (Shen fraction)": 1887724796923.1038,
+       "trapped (Shen magnitude)": 220520676845.91937
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 3.516352471435831,
+      "thick (500-100 nm)": 1.810919522734316,
+      "50 nm": -2.495111980848441,
+      "all four": 0.7341798431634128
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 2537999953715.931,
+       "electron counting": 76.11839460509209,
+       "neutral": 458.9838468800761,
+       "bound (Shen fraction)": 1786588.3778899624,
+       "trapped (Shen magnitude)": 0.1206515890092308
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5481461669390.487,
+       "electron counting": 44863535131.0873,
+       "neutral": 142563837204.52396,
+       "bound (Shen fraction)": 1082880157218.0758,
+       "trapped (Shen magnitude)": 91900066.48814237
+      },
+      "50 nm": {
+       "bare ends": 13030953343953.65,
+       "electron counting": 7034236891681.204,
+       "neutral": 7296322855282.544,
+       "bound (Shen fraction)": 8501343653166.831,
+       "trapped (Shen magnitude)": 6093441722688.446
+      },
+      "all four": {
+       "bare ends": 7363091706587.41,
+       "electron counting": 1468986752957.818,
+       "neutral": 1715992926277.6929,
+       "bound (Shen fraction)": 2878216421663.956,
+       "trapped (Shen magnitude)": 624674301438.2292
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 2.455871096047363,
+      "thick (500-100 nm)": 1.0928603069339895,
+      "50 nm": -2.3533537686462336,
+      "all four": 0.23138640281807604
+     }
+    }
+   }
+  },
+  "PBEsol/phi_1/cap_0": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 19018737745188.96,
+     "dn_ddsig": 0.9335559582856888,
+     "dsig_to_match": -9660628980131.287
+    },
+    "200": {
+     "n_model_dsig0": 17767492473518.19,
+     "dn_ddsig": 0.9325718691247077,
+     "dsig_to_match": -9401412120384.004
+    },
+    "100": {
+     "n_model_dsig0": 15842854115165.066,
+     "dn_ddsig": 0.9300284936947181,
+     "dsig_to_match": -8432918096958.311
+    },
+    "50": {
+     "n_model_dsig0": 12462119697245.76,
+     "dn_ddsig": 0.9236893737465924,
+     "dsig_to_match": -5047280860594.569
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -9164986399157.867,
+    "50 nm": -5047280860594.569,
+    "all four": -8135560014517.043
+   },
+   "rms_all_four_after_mean_cal": 0.20761776274524196,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 10473951961444.389,
+       "electron counting": 5699665539569.759,
+       "neutral": 5866839095593.087,
+       "bound (Shen fraction)": 7307085857072.0625,
+       "trapped (Shen magnitude)": 4432527570738.595
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2133981887764.785,
+       "electron counting": 25347.510671934648,
+       "neutral": 78363.72243939943,
+       "bound (Shen fraction)": 1295969852.930436,
+       "trapped (Shen magnitude)": 4.839798482909265
+      },
+      "50 nm": {
+       "bare ends": 5849737718887.96,
+       "electron counting": 1190200029680.9368,
+       "neutral": 1344659489100.3716,
+       "bound (Shen fraction)": 2723033162082.663,
+       "trapped (Shen magnitude)": 170328503626.6489
+      },
+      "all four": {
+       "bare ends": 3049523719830.428,
+       "electron counting": 14481795.586424919,
+       "neutral": 44860080.37881125,
+       "bound (Shen fraction)": 202627327381.62238,
+       "trapped (Shen magnitude)": 2717.1331497686606
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -2.1353939618157693,
+      "thick (500-100 nm)": 2.6818259124795767,
+      "50 nm": 0.5135700330343573,
+      "all four": 2.1414653342042773
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 12315274303868.895,
+       "electron counting": 6340418213798.256,
+       "neutral": 6549725064676.25,
+       "bound (Shen fraction)": 8352636371636.699,
+       "trapped (Shen magnitude)": 4753795270425.985
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3928118409849.297,
+       "electron counting": 1916758.5392559506,
+       "neutral": 7872517.256134699,
+       "bound (Shen fraction)": 266583950916.94705,
+       "trapped (Shen magnitude)": 42.53402505552983
+      },
+      "50 nm": {
+       "bare ends": 7683127109067.766,
+       "electron counting": 1790573812173.0168,
+       "neutral": 1990494567946.0833,
+       "bound (Shen fraction)": 3748268805547.209,
+       "trapped (Shen magnitude)": 381757817933.86237
+      },
+      "all four": {
+       "bare ends": 4862145386390.792,
+       "electron counting": 1096304398.5082376,
+       "neutral": 4417689275.994973,
+       "bound (Shen fraction)": 1033488193657.7042,
+       "trapped (Shen magnitude)": 23990.474085860038
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -2.017647506024673,
+      "thick (500-100 nm)": 1.8291880675925596,
+      "50 nm": 0.10018539564468992,
+      "all four": 1.393146847919482
+     }
+    }
+   }
+  },
+  "PBEsol/phi_1/cap_2": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 16187721417260.826,
+     "dn_ddsig": 0.9361594710251107,
+     "dsig_to_match": -6609687354319.201
+    },
+    "200": {
+     "n_model_dsig0": 14993090120896.586,
+     "dn_ddsig": 0.9350447250293542,
+     "dsig_to_match": -6409415464814.736
+    },
+    "100": {
+     "n_model_dsig0": 13146878792950.977,
+     "dn_ddsig": 0.9319711704218842,
+     "dsig_to_match": -5522572968240.091
+    },
+    "50": {
+     "n_model_dsig0": 9876784773430.477,
+     "dn_ddsig": 0.9263440813183688,
+     "dsig_to_match": -2241915088910.382
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -6180558595791.343,
+    "50 nm": -2241915088910.382,
+    "all four": -5195897719071.103
+   },
+   "rms_all_four_after_mean_cal": 0.19870614120944796,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 8067506993747.661,
+       "electron counting": 3290339538563.0796,
+       "neutral": 3456337864506.342,
+       "bound (Shen fraction)": 4892645288448.093,
+       "trapped (Shen magnitude)": 2042050382408.1052
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 2418379819561.7095,
+       "electron counting": 78034.25267927634,
+       "neutral": 254632.2543650652,
+       "bound (Shen fraction)": 6474587321.869149,
+       "trapped (Shen magnitude)": 9.897929241890385
+      },
+      "50 nm": {
+       "bare ends": 6003837038828.605,
+       "electron counting": 1301590805697.921,
+       "neutral": 1458805978534.3381,
+       "bound (Shen fraction)": 2853719005282.7847,
+       "trapped (Shen magnitude)": 231419292138.57187
+      },
+      "all four": {
+       "bare ends": 3304670599582.883,
+       "electron counting": 45218340.990335986,
+       "neutral": 147783999.06238297,
+       "bound (Shen fraction)": 355404893343.5451,
+       "trapped (Shen magnitude)": 5632.400457563944
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -0.733396794598467,
+      "thick (500-100 nm)": 2.5129664072821924,
+      "50 nm": 0.43921004369469485,
+      "all four": 1.9889416211315152
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.660898448354229,
+      "Lambda_bare_bar_e_per_nm": 2.6393344383276034
+     },
+     "pred": {
+      "none": {
+       "bare ends": 9902086768728.797,
+       "electron counting": 3913101302313.3267,
+       "neutral": 4121732517644.5996,
+       "bound (Shen fraction)": 5924784056526.695,
+       "trapped (Shen magnitude)": 2342117123157.4585
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 4217613960907.153,
+       "electron counting": 6548850.430656212,
+       "neutral": 28776032.153768037,
+       "bound (Shen fraction)": 453518817653.61444,
+       "trapped (Shen magnitude)": 87.09644407754227
+      },
+      "50 nm": {
+       "bare ends": 7834107338478.1875,
+       "electron counting": 1897213470060.6772,
+       "neutral": 2099492864259.0938,
+       "bound (Shen fraction)": 3873120513950.5435,
+       "trapped (Shen magnitude)": 453946200234.12885
+      },
+      "all four": {
+       "bare ends": 5118070600697.645,
+       "electron counting": 3731954638.958426,
+       "neutral": 15209428468.701923,
+       "bound (Shen fraction)": 1241805364889.749,
+       "trapped (Shen magnitude)": 49793.769836724394
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": -0.8980309822189037,
+      "thick (500-100 nm)": 1.7014607266540207,
+      "50 nm": 0.047692085358178316,
+      "all four": 1.2860564192444586
+     }
+    }
+   }
+  },
+  "HSE/phi_1/cap_0": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 11601462540025.31,
+     "dn_ddsig": 0.9226031628624934,
+     "dsig_to_match": -1735808638522.9482
+    },
+    "200": {
+     "n_model_dsig0": 10503884238115.35,
+     "dn_ddsig": 0.9208540149316657,
+     "dsig_to_match": -1633140773379.7512
+    },
+    "100": {
+     "n_model_dsig0": 8797296177620.545,
+     "dn_ddsig": 0.9165806659250286,
+     "dsig_to_match": -869859257631.0785
+    },
+    "50": {
+     "n_model_dsig0": 5733457290685.703,
+     "dn_ddsig": 0.9089990086705348,
+     "dsig_to_match": 2273426802012.401
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": -1412936223177.926,
+    "50 nm": 2273426802012.401,
+    "all four": -491345466880.34424
+   },
+   "rms_all_four_after_mean_cal": 0.18202014631119964,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 4675795247590.742,
+       "electron counting": 225309749235.52945,
+       "neutral": 366890116692.6873,
+       "bound (Shen fraction)": 1180433262694.9866,
+       "trapped (Shen magnitude)": 5912393935.229704
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3396871461535.015,
+       "electron counting": 158243082.62325436,
+       "neutral": 645839399.3530134,
+       "bound (Shen fraction)": 154520353488.2898,
+       "trapped (Shen magnitude)": 1004607.7323952467
+      },
+      "50 nm": {
+       "bare ends": 6749833205786.623,
+       "electron counting": 2037786881603.6438,
+       "neutral": 2238806484730.4307,
+       "bound (Shen fraction)": 3173727738381.4453,
+       "trapped (Shen magnitude)": 1328411218213.149
+      },
+      "all four": {
+       "bare ends": 4229755434222.569,
+       "electron counting": 36931132473.56488,
+       "neutral": 100241156116.93512,
+       "bound (Shen fraction)": 779294190050.7527,
+       "trapped (Shen magnitude)": 295013288.466013
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 1.1700508017072218,
+      "thick (500-100 nm)": 1.90802284947872,
+      "50 nm": -0.019078164557305374,
+      "all four": 1.4278719548051721
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 6595412495575.677,
+       "electron counting": 791814991003.9894,
+       "neutral": 1022643806825.8921,
+       "bound (Shen fraction)": 2147480225550.5786,
+       "trapped (Shen magnitude)": 115499589923.82475
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5305322514529.43,
+       "electron counting": 19695156515.514328,
+       "neutral": 78393587868.44017,
+       "bound (Shen fraction)": 939330839532.7107,
+       "trapped (Shen magnitude)": 39756679.50658896
+      },
+      "50 nm": {
+       "bare ends": 8677763815121.664,
+       "electron counting": 2747926022598.17,
+       "neutral": 3003183389789.336,
+       "bound (Shen fraction)": 4185551030094.6416,
+       "trapped (Shen magnitude)": 1841854627095.1665
+      },
+      "all four": {
+       "bare ends": 6146296863288.238,
+       "electron counting": 422809578684.87,
+       "neutral": 631568807538.0398,
+       "bound (Shen fraction)": 1717895702593.527,
+       "trapped (Shen magnitude)": 10959235881.210463
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 0.5709159363637274,
+      "thick (500-100 nm)": 1.1682948736841892,
+      "50 nm": -0.3789659646946324,
+      "all four": 0.780384109311119
+     }
+    }
+   }
+  },
+  "HSE/phi_1/cap_2": {
+   "coherent": {
+    "500": {
+     "n_model_dsig0": 9431468822117.559,
+     "dn_ddsig": 0.924074564395943,
+     "dsig_to_match": 615243833980.0898
+    },
+    "200": {
+     "n_model_dsig0": 8378014734511.058,
+     "dn_ddsig": 0.9219249257751742,
+     "dsig_to_match": 674659343835.3605
+    },
+    "100": {
+     "n_model_dsig0": 6733642088926.55,
+     "dn_ddsig": 0.9168954839790259,
+     "dsig_to_match": 1381136599754.9382
+    },
+    "50": {
+     "n_model_dsig0": 3753008277069.2744,
+     "dn_ddsig": 0.8964141101065487,
+     "dsig_to_match": 4514645270866.716
+    }
+   },
+   "calibration_dsig_cm2": {
+    "none": 0.0,
+    "thick (500-100 nm)": 890346592523.4629,
+    "50 nm": 4514645270866.716,
+    "all four": 1796421262109.2761
+   },
+   "rms_all_four_after_mean_cal": 0.17675663454114468,
+   "t20": {
+    "R_bar_0.2": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.012063552228434173,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 190523.26713468798,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 2849853064182.9497,
+       "electron counting": 1759915.0800152863,
+       "neutral": 7688775.937338914,
+       "bound (Shen fraction)": 6484931156.757863,
+       "trapped (Shen magnitude)": 8845.454403528258
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 3655530987014.462,
+       "electron counting": 552646718.372247,
+       "neutral": 2390513005.2126327,
+       "bound (Shen fraction)": 293556377424.96576,
+       "trapped (Shen magnitude)": 2762166.4134772513
+      },
+      "50 nm": {
+       "bare ends": 6976331693622.696,
+       "electron counting": 2225765941861.1,
+       "neutral": 2429329571527.4287,
+       "bound (Shen fraction)": 3374003519581.1514,
+       "trapped (Shen magnitude)": 1504798563945.4368
+      },
+      "all four": {
+       "bare ends": 4481374501969.229,
+       "electron counting": 99399800043.11877,
+       "neutral": 208150421803.69196,
+       "bound (Shen fraction)": 978554227098.9054,
+       "trapped (Shen magnitude)": 958354778.0012729
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 2.2364749721433945,
+      "thick (500-100 nm)": 1.7649423066131436,
+      "50 nm": -0.13103764184530398,
+      "all four": 1.2916490937343994
+     }
+    },
+    "R_bar_0.25": {
+     "info": {
+      "eps_ch": -0.022213860144245832,
+      "epsc_bar": -0.015079440285542714,
+      "eps_bar": -0.011309580214157035,
+      "L_ch_per_cm": 121143.93305381722,
+      "L_bar_per_cm": 238154.08391835995,
+      "Lambda_bare_ch_e_per_nm": 2.6114274239253454,
+      "Lambda_bare_bar_e_per_nm": 2.615630350030433
+     },
+     "pred": {
+      "none": {
+       "bare ends": 4751981324477.265,
+       "electron counting": 288302241.7688403,
+       "neutral": 1807549149.634531,
+       "bound (Shen fraction)": 441455142839.14496,
+       "trapped (Shen magnitude)": 383100.7669152061
+      },
+      "thick (500-100 nm)": {
+       "bare ends": 5567962083854.314,
+       "electron counting": 60746739163.286804,
+       "neutral": 176064240157.26422,
+       "bound (Shen fraction)": 1147735743670.0159,
+       "trapped (Shen magnitude)": 120335494.25218153
+      },
+      "50 nm": {
+       "bare ends": 8904877278221.06,
+       "electron counting": 2933052920138.0596,
+       "neutral": 3190790092682.8535,
+       "bound (Shen fraction)": 4383116094503.225,
+       "trapped (Shen magnitude)": 2016287128768.0994
+      },
+      "all four": {
+       "bare ends": 6400434431719.553,
+       "electron counting": 589230742181.199,
+       "neutral": 813342671003.8912,
+       "bound (Shen fraction)": 1931503470182.5808,
+       "trapped (Shen magnitude)": 33666061734.833282
+      }
+     },
+     "Lambda_fit_e_per_nm": {
+      "none": 1.4276413086081332,
+      "thick (500-100 nm)": 1.0582802306437529,
+      "50 nm": -0.46341748470578215,
+      "all four": 0.6750948794257523
+     }
+    }
+   }
+  }
+ },
+ "mobility_t20": {
+  "R_bar_0.2": {
+   "L_A_per_cm": 190523.26713468798,
+   "Lambda_strict_upper_bound_e_per_nm": 1.5498947743384843,
+   "Lambda_estimate_vs_50nm_e_per_nm": 0.8850522850291672,
+   "Lambda_bare_e_per_nm": 2.6393344383276034
+  },
+  "R_bar_0.25": {
+   "L_A_per_cm": 238154.08391835995,
+   "Lambda_strict_upper_bound_e_per_nm": 1.3862680293570193,
+   "Lambda_estimate_vs_50nm_e_per_nm": 0.791614829186695,
+   "Lambda_bare_e_per_nm": 2.6393344383276034
+  }
+ }
+}

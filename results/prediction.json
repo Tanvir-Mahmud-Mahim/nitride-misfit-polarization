@@ -1,0 +1,429 @@
+{
+ "description": "A test that does not depend on the polarization constants: how fast the\ninterface charge changes as a layer relaxes.",
+ "f": {
+  "PBEsol": 0.31325546873917676,
+  "HSE": 0.2104741823844428
+ },
+ "cases": {
+  "GaN on AlN": {
+   "PBEsol": {
+    "eps_c": -0.024145500156788947,
+    "coherent_cm2": -61482836103203.42,
+    "bare ends": {
+     "relaxed_cm2": -2410470804556.8794,
+     "slope_cm2_per_unit_R": 59072365298646.54,
+     "Lambda_e_per_nm": 2.660898448354229
+    },
+    "electron counting": {
+     "relaxed_cm2": -43533755352599.78,
+     "slope_cm2_per_unit_R": 17949080750603.64,
+     "Lambda_e_per_nm": -0.05476603513413331
+    },
+    "neutral": {
+     "relaxed_cm2": -42704433740860.73,
+     "slope_cm2_per_unit_R": 18778402362342.695,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": -30082129493889.844,
+     "slope_cm2_per_unit_R": 31400706609313.58,
+     "Lambda_e_per_nm": 0.833540990706552
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": -55326737987831.61,
+     "slope_cm2_per_unit_R": 6156098115371.8125,
+     "Lambda_e_per_nm": -0.833540990706552
+    },
+    "f_zero_relaxed": 1.0598221328680757,
+    "relaxed_C_m2": {
+     "bare ends": -0.0038620000000002125,
+     "electron counting": -0.0697487656162078,
+     "neutral": -0.06842004590780827,
+     "Shen fraction": -0.04819688497607255,
+     "trapped (Shen)": -0.08864320683954398
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.008089264372694286,
+     "bound minus neutral": 0.004044632186347143
+    }
+   },
+   "HSE": {
+    "eps_c": -0.024145500156788947,
+    "coherent_cm2": -39243529183566.98,
+    "bare ends": {
+     "relaxed_cm2": 24341885390396.86,
+     "slope_cm2_per_unit_R": 63585414573963.836,
+     "Lambda_e_per_nm": 2.6114274239253454
+    },
+    "electron counting": {
+     "relaxed_cm2": -16781399157646.053,
+     "slope_cm2_per_unit_R": 22462130025920.92,
+     "Lambda_e_per_nm": -0.10423705956301672
+    },
+    "neutral": {
+     "relaxed_cm2": -15202938236967.443,
+     "slope_cm2_per_unit_R": 24040590946599.53,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": -6879773816460.946,
+     "slope_cm2_per_unit_R": 32363755367106.03,
+     "Lambda_e_per_nm": 0.5496380519069988
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": -23526102657473.945,
+     "slope_cm2_per_unit_R": 15717426526093.031,
+     "Lambda_e_per_nm": -0.5496380519069988
+    },
+    "f_zero_relaxed": 0.3844482499208135,
+    "relaxed_C_m2": {
+     "bare ends": 0.03899999999999981,
+     "electron counting": -0.026886765616207783,
+     "neutral": -0.024357792411414392,
+     "Shen fraction": -0.011022612855938732,
+     "trapped (Shen)": -0.03769297196689006
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0053340718221902665,
+     "bound minus neutral": 0.0026670359110951333
+    }
+   }
+  },
+  "AlN on GaN": {
+   "PBEsol": {
+    "eps_c": 0.024742930591259624,
+    "coherent_cm2": 79443420002353.05,
+    "bare ends": {
+     "relaxed_cm2": 2410470804556.9663,
+     "slope_cm2_per_unit_R": -77032949197796.08,
+     "Lambda_e_per_nm": -2.5891483393085113
+    },
+    "electron counting": {
+     "relaxed_cm2": 46662438591798.06,
+     "slope_cm2_per_unit_R": -32780981410554.984,
+     "Lambda_e_per_nm": 0.19370964200395224
+    },
+    "neutral": {
+     "relaxed_cm2": 43582140245421.76,
+     "slope_cm2_per_unit_R": -35861279756931.29,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 30684889635949.22,
+     "slope_cm2_per_unit_R": -48758530366403.83,
+     "Lambda_e_per_nm": -0.8110648766653488
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 30684889635949.22,
+     "slope_cm2_per_unit_R": -48758530366403.83,
+     "Lambda_e_per_nm": -0.8110648766653488
+    },
+    "f_zero_relaxed": 1.0585468317727351,
+    "relaxed_C_m2": {
+     "bare ends": 0.003862000000000352,
+     "electron counting": 0.07476146879723872,
+     "neutral": 0.06982628676092577,
+     "Shen fraction": 0.049162613191586595,
+     "trapped (Shen)": 0.049162613191586595
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.004132734713867832
+    }
+   },
+   "HSE": {
+    "eps_c": 0.024742930591259624,
+    "coherent_cm2": 52928342561595.85,
+    "bare ends": {
+     "relaxed_cm2": -24341885390396.887,
+     "slope_cm2_per_unit_R": -77270227951992.73,
+     "Lambda_e_per_nm": -2.6241251499864284
+    },
+    "electron counting": {
+     "relaxed_cm2": 19910082396844.215,
+     "slope_cm2_per_unit_R": -33018260164751.637,
+     "Lambda_e_per_nm": 0.15873283132603522
+    },
+    "neutral": {
+     "relaxed_cm2": 17385972224572.875,
+     "slope_cm2_per_unit_R": -35542370337022.98,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 8603335510407.669,
+     "slope_cm2_per_unit_R": -44325007051188.18,
+     "Lambda_e_per_nm": -0.5523105954178469
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 8603335510407.669,
+     "slope_cm2_per_unit_R": -44325007051188.18,
+     "Lambda_e_per_nm": -0.5523105954178469
+    },
+    "f_zero_relaxed": 0.4166514462591461,
+    "relaxed_C_m2": {
+     "bare ends": -0.038999999999999854,
+     "electron counting": 0.03189946879723851,
+     "neutral": 0.02785539845758366,
+     "Shen fraction": 0.01378406312923763,
+     "trapped (Shen)": 0.01378406312923763
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.0028142670656692054
+    }
+   }
+  },
+  "Al0.30Ga0.70N on GaN": {
+   "PBEsol": {
+    "eps_c": 0.007296503363972439,
+    "coherent_cm2": 19931688950855.945,
+    "bare ends": {
+     "relaxed_cm2": 723141241367.1838,
+     "slope_cm2_per_unit_R": -19208547709488.76,
+     "Lambda_e_per_nm": -2.6393344383276034
+    },
+    "electron counting": {
+     "relaxed_cm2": 13332152388682.902,
+     "slope_cm2_per_unit_R": -6599536562173.043,
+     "Lambda_e_per_nm": 0.09614490019995195
+    },
+    "neutral": {
+     "relaxed_cm2": 12888978828091.762,
+     "slope_cm2_per_unit_R": -7042710122764.184,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 9077963672257.66,
+     "slope_cm2_per_unit_R": -10853725278598.285,
+     "Lambda_e_per_nm": -0.8267859466377652
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 9077963672257.66,
+     "slope_cm2_per_unit_R": -10853725278598.285,
+     "Lambda_e_per_nm": -0.8267859466377652
+    },
+    "f_zero_relaxed": 1.0594403168883562,
+    "relaxed_C_m2": {
+     "bare ends": 0.001158600000000256,
+     "electron counting": 0.021360463038075032,
+     "neutral": 0.02065042071448932,
+     "Shen fraction": 0.014544501279992057,
+     "trapped (Shen)": 0.014544501279992057
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.0012211838868994532
+    }
+   },
+   "HSE": {
+    "eps_c": 0.007296503363972439,
+    "coherent_cm2": 12919877778584.379,
+    "bare ends": {
+     "relaxed_cm2": -7302565617119.159,
+     "slope_cm2_per_unit_R": -20222443395703.54,
+     "Lambda_e_per_nm": -2.615630350030433
+    },
+    "electron counting": {
+     "relaxed_cm2": 5306445530196.56,
+     "slope_cm2_per_unit_R": -7613432248387.819,
+     "Lambda_e_per_nm": 0.11984898849712261
+    },
+    "neutral": {
+     "relaxed_cm2": 4754009541859.626,
+     "slope_cm2_per_unit_R": -8165868236724.753,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 2216411742916.983,
+     "slope_cm2_per_unit_R": -10703466035667.396,
+     "Lambda_e_per_nm": -0.5505226593425893
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 2216411742916.983,
+     "slope_cm2_per_unit_R": -10703466035667.396,
+     "Lambda_e_per_nm": -0.5505226593425893
+    },
+    "f_zero_relaxed": 0.3943084565204419,
+    "relaxed_C_m2": {
+     "bare ends": -0.011700000000000104,
+     "electron counting": 0.008501863038074669,
+     "neutral": 0.007616763005780536,
+     "Shen fraction": 0.0035510831058248047,
+     "trapped (Shen)": 0.0035510831058248047
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.0008131359799911467
+    }
+   }
+  },
+  "Al0.22Ga0.78N on GaN": {
+   "PBEsol": {
+    "eps_c": 0.0053403781769575465,
+    "coherent_cm2": 14317997130172.795,
+    "bare ends": {
+     "relaxed_cm2": 530303577002.5755,
+     "slope_cm2_per_unit_R": -13787693553170.219,
+     "Lambda_e_per_nm": -2.645081574331336
+    },
+    "electron counting": {
+     "relaxed_cm2": 9723146785814.63,
+     "slope_cm2_per_unit_R": -4594850344358.164,
+     "Lambda_e_per_nm": 0.08508558450058583
+    },
+    "neutral": {
+     "relaxed_cm2": 9436652079762.031,
+     "slope_cm2_per_unit_R": -4881345050410.764,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 6646689704775.65,
+     "slope_cm2_per_unit_R": -7671307425397.145,
+     "Lambda_e_per_nm": -0.8285862684205224
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 6646689704775.65,
+     "slope_cm2_per_unit_R": -7671307425397.145,
+     "Lambda_e_per_nm": -0.8285862684205224
+    },
+    "f_zero_relaxed": 1.0595421992344305,
+    "relaxed_C_m2": {
+     "bare ends": 0.0008496400000001462,
+     "electron counting": 0.015578198589184402,
+     "neutral": 0.01511918346538223,
+     "Shen fraction": 0.010649170938439905,
+     "trapped (Shen)": 0.010649170938439905
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.0008940025053884652
+    }
+   },
+   "HSE": {
+    "eps_c": 0.0053403781769575465,
+    "coherent_cm2": 9245196197643.127,
+    "bare ends": {
+     "relaxed_cm2": -5355214785887.365,
+     "slope_cm2_per_unit_R": -14600410983530.492,
+     "Lambda_e_per_nm": -2.6145425578588237
+    },
+    "electron counting": {
+     "relaxed_cm2": 3837628422924.6904,
+     "slope_cm2_per_unit_R": -5407567774718.437,
+     "Lambda_e_per_nm": 0.11562460097309803
+    },
+    "neutral": {
+     "relaxed_cm2": 3448304705368.177,
+     "slope_cm2_per_unit_R": -5796891492274.95,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 1595391138340.6614,
+     "slope_cm2_per_unit_R": -7649805059302.466,
+     "Lambda_e_per_nm": -0.5502937071746657
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 1595391138340.6614,
+     "slope_cm2_per_unit_R": -7649805059302.466,
+     "Lambda_e_per_nm": -0.5502937071746657
+    },
+    "f_zero_relaxed": 0.391696151612244,
+    "relaxed_C_m2": {
+     "bare ends": -0.00858000000000005,
+     "electron counting": 0.0061485585891842085,
+     "neutral": 0.005524793225853147,
+     "Shen fraction": 0.002556098403940069,
+     "trapped (Shen)": 0.002556098403940069
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0,
+     "bound minus neutral": -0.0005937389643826158
+    }
+   }
+  },
+  "Al0.30Ga0.70N on GaN strained to AlN": {
+   "PBEsol": {
+    "eps_c": -0.017025174515935316,
+    "coherent_cm2": 14975561884540.84,
+    "bare ends": {
+     "relaxed_cm2": 59795506540013.63,
+     "slope_cm2_per_unit_R": 44819944655472.8,
+     "Lambda_e_per_nm": 2.6393344383276034
+    },
+    "electron counting": {
+     "relaxed_cm2": 30374480529610.938,
+     "slope_cm2_per_unit_R": 15398918645070.098,
+     "Lambda_e_per_nm": -0.09614490019995195
+    },
+    "neutral": {
+     "relaxed_cm2": 31408552170990.242,
+     "slope_cm2_per_unit_R": 16432990286449.402,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 40300920867936.28,
+     "slope_cm2_per_unit_R": 25325358983395.44,
+     "Lambda_e_per_nm": 0.8267859466377652
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 22516183474044.2,
+     "slope_cm2_per_unit_R": 7540621589503.359,
+     "Lambda_e_per_nm": -0.8267859466377652
+    },
+    "f_zero_relaxed": -1.1064431838191173,
+    "relaxed_C_m2": {
+     "bare ends": 0.09580296339660402,
+     "electron counting": 0.04866528297443059,
+     "neutral": 0.05032204839613053,
+     "Shen fraction": 0.06456919374329051,
+     "trapped (Shen)": 0.036074903048970555
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.00569885813886399,
+     "bound minus neutral": 0.0028494290694319946
+    }
+   },
+   "HSE": {
+    "eps_c": -0.017025174515935316,
+    "coherent_cm2": 9097147700204.166,
+    "bare ends": {
+     "relaxed_cm2": 56282848956844.71,
+     "slope_cm2_per_unit_R": 47185701256640.55,
+     "Lambda_e_per_nm": 2.615630350030433
+    },
+    "electron counting": {
+     "relaxed_cm2": 26861822946442.02,
+     "slope_cm2_per_unit_R": 17764675246237.85,
+     "Lambda_e_per_nm": -0.11984898849712261
+    },
+    "neutral": {
+     "relaxed_cm2": 28150840252561.504,
+     "slope_cm2_per_unit_R": 19053692552357.336,
+     "Lambda_e_per_nm": 0.0
+    },
+    "Shen fraction": {
+     "relaxed_cm2": 34071901783427.54,
+     "slope_cm2_per_unit_R": 24974754083223.375,
+     "Lambda_e_per_nm": 0.5505226593425893
+    },
+    "trapped (Shen)": {
+     "relaxed_cm2": 22229778721695.47,
+     "slope_cm2_per_unit_R": 13132631021491.303,
+     "Lambda_e_per_nm": -0.5505226593425893
+    },
+    "f_zero_relaxed": -1.0006693993477767,
+    "relaxed_C_m2": {
+     "bare ends": 0.09017506549360786,
+     "electron counting": 0.04303738507143443,
+     "neutral": 0.0451026184801207,
+     "Shen fraction": 0.05458920491335053,
+     "trapped (Shen)": 0.035616032046890865
+    },
+    "diff_R0.2_C_m2": {
+     "bound minus trapped": 0.0037946345732919333,
+     "bound minus neutral": 0.0018973172866459675
+    }
+   }
+  }
+ }
+}

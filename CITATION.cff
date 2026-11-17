@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code or its data, please cite the paper and the archived code."
+title: "nitride-misfit-polarization: code and data for \"The charge of misfit dislocations decides the polarization charge at relaxed nitride interfaces\""
+authors:
+  - family-names: Mahim
+    given-names: Tanvir M.
+    affiliation: "Department of Electrical and Electronic Engineering, BRAC University, Dhaka 1212, Bangladesh"
+license: Apache-2.0
+repository-code: "https://github.com/Tanvir-Mahmud-Mahim/nitride-misfit-polarization"
+doi: 10.5281/zenodo.24310457
+version: "1.2.0"
+date-released: "2026-11-17"
+keywords:
+  - GaN
+  - AlN
+  - AlGaN
+  - polarization
+  - misfit dislocations
+  - Berry phase
+  - density-functional theory
+  - two-dimensional electron gas
+references:
+  - type: software
+    title: "kpenvelope: self-consistent six-band k.p envelope-function solver for wurtzite heterostructures"
+    authors:
+      - family-names: Mahim
+        given-names: Tanvir M.
+    version: "0.16.0"
+    doi: 10.5281/zenodo.24110844
+  - type: software
+    title: "labplan: exact measurement planning, calibration and audit trails for any lab model"
+    authors:
+      - family-names: Mahim
+        given-names: Tanvir M.
+    version: "0.6.0"
+    doi: 10.5281/zenodo.24110763
+  - type: article
+    title: "Origin of the conflicting hole masses in the GaN/AlN two-dimensional hole gas"
+    authors:
+      - family-names: Mahim
+        given-names: Tanvir M.
+      - family-names: Mohsin
+        given-names: Abu S. M.
+      - family-names: Rahman
+        given-names: M. Mosaddequr
+    journal: "Physical Review B"
+    volume: 114
+    start: L291304
+    year: 2026
+    doi: 10.1103/zn44-nmx8

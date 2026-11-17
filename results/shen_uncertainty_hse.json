@@ -1,0 +1,75 @@
+{
+ "description": "Statistical error bar of the line charge from the Shen series, with labplan.",
+ "labplan_version": "0.6.0",
+ "readings_1e12": [
+  13.02,
+  11.319999999999999,
+  12.14,
+  10.59,
+  6.45
+ ],
+ "settings_t_R": [
+  [
+   25.0,
+   0.0
+  ],
+  [
+   35.0,
+   0.0
+  ],
+  [
+   50.0,
+   0.0
+  ],
+  [
+   65.0,
+   0.0
+  ],
+  [
+   100.0,
+   0.78
+  ]
+ ],
+ "Lambda_bulk_e_per_nm": -2.6145425578588237,
+ "R_sigma": 0.05,
+ "phi": {
+  "0.5": {
+   "fit_A": {
+    "values": {
+     "dsig_1e12cm2": 2.350063691189212,
+     "Lambda_e_per_nm": -0.5729500135068806
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.6004989499658614,
+     "Lambda_e_per_nm": 0.5116508905306841
+    },
+    "residual_sd_1e12": 1.0681876020010856,
+    "fraction_of_bulk": 0.21913967771712128,
+    "fraction_sigma": 0.19569422920272522
+   },
+   "fit_B": {
+    "values": {
+     "dsig_1e12cm2": 2.350063691189212,
+     "Lambda_e_per_nm": -0.5729500135068806
+    },
+    "sigma": {
+     "dsig_1e12cm2": 0.6004989499658614,
+     "Lambda_e_per_nm": 0.5323732285916173
+    },
+    "chi2": 3.0,
+    "dof": 3,
+    "goodness": {
+     "chi2": 3.0,
+     "dof": 3,
+     "reduced_chi2": 1.0,
+     "p_value": 0.39162517627108884,
+     "p_value_low": 0.6083748237289112,
+     "birge_ratio": 1.0
+    },
+    "R_adjusted": 0.78,
+    "fraction_of_bulk": 0.21913967771712128,
+    "fraction_sigma": 0.20362002792440148
+   }
+  }
+ }
+}

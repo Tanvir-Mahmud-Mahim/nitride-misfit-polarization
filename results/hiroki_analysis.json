@@ -1,0 +1,899 @@
+{
+ "description": "A second, independent AlGaN/GaN series: Hiroki, Maeda and Kobayashi,\nJ. Cryst. Growth 237-239, 956 (2002), Fig. 3 (room temperature) and Fig. 2(a).",
+ "shen_fraction": {
+  "best": 0.31325546873917676,
+  "low": 0.2104741823844428,
+  "high": 0.8510422490317745
+ },
+ "ratio_77K_over_RT_40nm": {
+  "0.25": 0.7208333333333333,
+  "0.35": 0.7440550688360451,
+  "0.45": 0.7440550688360451
+ },
+ "as_measured": {
+  "0.35": {
+   "x": 0.35,
+   "eps_c": 0.00852295188248124,
+   "scale": 1.0,
+   "t_nm": [
+    20,
+    35,
+    40,
+    70,
+    85
+   ],
+   "ns_used": [
+    14730000000000.0,
+    16070000000000.0,
+    18280000000000.0,
+    22290000000000.0,
+    15250000000000.0
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.635743684765909,
+    "electron counting": 0.10306627644418737,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8256611234476698,
+    "Shen fraction low (f=0.21)": -0.5547559970260633,
+    "Shen fraction high (f=0.85)": -2.2431292333544754
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -5097245850163.388,
+     "rms_log_misfit_coherent": 0.14023401618036418,
+     "fit_coherent": {
+      "20": 17130376013697.15,
+      "35": 17652277581545.082,
+      "40": 17738456501928.656,
+      "70": 17981042026122.723
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 15250000000000.0,
+       "n_coherent_model": 18030010793490.203,
+       "R_needed": {
+        "bulk-terminated": 0.1255210597736885,
+        "electron counting": 0.35923393266103854,
+        "neutral": 0.33576089006894,
+        "Shen fraction best (f=0.31)": 0.22039479620541574,
+        "Shen fraction low (f=0.21)": 0.24839838583390966,
+        "Shen fraction high (f=0.85)": 0.1385165574430516
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 1.61271726694499e-91,
+        "electron counting": 10239136197741.762,
+        "neutral": 9692170491949.936,
+        "Shen fraction best (f=0.31)": 5320263974758.944,
+        "Shen fraction low (f=0.21)": 6752208252979.937,
+        "Shen fraction high (f=0.85)": 1.845292478852192e-39
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": -4243805411469.8804,
+     "rms_log_misfit_coherent": 0.12156348651972251,
+     "fit_coherent": {
+      "20": 16553073802501.914,
+      "35": 17678681497451.453,
+      "40": 17870113083984.42,
+      "70": 18443671472154.664
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 15250000000000.0,
+       "n_coherent_model": 18573901261541.9,
+       "R_needed": {
+        "bulk-terminated": 0.14864770188984314,
+        "electron counting": 0.4249921756630764,
+        "neutral": 0.39726157275763385,
+        "Shen fraction best (f=0.31)": 0.2606548002186202,
+        "Shen fraction low (f=0.21)": 0.2936536511865077,
+        "Shen fraction high (f=0.85)": 0.16395560123116493
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 6.30397370210136e-79,
+        "electron counting": 10743600841163.566,
+        "neutral": 10196322660772.662,
+        "Shen fraction best (f=0.31)": 5821781374419.056,
+        "Shen fraction low (f=0.21)": 7254780085586.2295,
+        "Shen fraction high (f=0.85)": 7.213126604361694e-27
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": -3373115496006.4854,
+     "rms_log_misfit_coherent": 0.10456567844446792,
+     "fit_coherent": {
+      "20": 15994320856040.615,
+      "35": 17716192340989.8,
+      "40": 18009980849072.12,
+      "70": 18899707620314.336
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 15250000000000.0,
+       "n_coherent_model": 19107989651242.8,
+       "R_needed": {
+        "bulk-terminated": 0.17206843577387299,
+        "electron counting": 0.4918977991645473,
+        "neutral": 0.4598013766515382,
+        "Shen fraction best (f=0.31)": 0.30167561738727317,
+        "Shen fraction low (f=0.21)": 0.33990802945093085,
+        "Shen fraction high (f=0.85)": 0.1897525463025753
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 6.545593945607129e-66,
+        "electron counting": 11264918066463.775,
+        "neutral": 10717432669142.703,
+        "Shen fraction best (f=0.31)": 6340613896043.011,
+        "Shen fraction low (f=0.21)": 7774562359690.266,
+        "Shen fraction high (f=0.85)": 7.489628154099304e-14
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": -2493293878591.2456,
+     "rms_log_misfit_coherent": 0.0897066956945518,
+     "fit_coherent": {
+      "20": 15446212448854.797,
+      "35": 17762552715093.82,
+      "40": 18158282449255.44,
+      "70": 19359880941327.07
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 15250000000000.0,
+       "n_coherent_model": 19644037074194.6,
+       "R_needed": {
+        "bulk-terminated": 0.19579421290155985,
+        "electron counting": 0.5593429119998512,
+        "neutral": 0.5228261891027036,
+        "Shen fraction best (f=0.31)": 0.34325116805129824,
+        "Shen fraction low (f=0.21)": 0.38686588885557066,
+        "Shen fraction high (f=0.85)": 0.21590080064673228
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 1.1399687959944545e-52,
+        "electron counting": 11795340627367.447,
+        "neutral": 11247673265747.281,
+        "Shen fraction best (f=0.31)": 6868780682298.503,
+        "Shen fraction low (f=0.21)": 8303587158499.53,
+        "Shen fraction high (f=0.85)": 1.3043857527064435
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.25": {
+   "x": 0.25,
+   "eps_c": 0.006073034150958274,
+   "scale": 1.0,
+   "t_nm": [
+    35,
+    65,
+    90
+   ],
+   "ns_used": [
+    14470000000000.0,
+    15910000000000.0,
+    13070000000000.0
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.6429261199205585,
+    "electron counting": 0.08923068671857255,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8279110605387283,
+    "Shen fraction low (f=0.21)": -0.5562677141927673,
+    "Shen fraction high (f=0.85)": -2.2492417891220136
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -365366199939.11224,
+     "rms_log_misfit_coherent": 0.039279901955742665,
+     "fit_coherent": {
+      "35": 15049706991166.74,
+      "65": 15297187986955.559
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 13070000000000.0,
+       "n_coherent_model": 15344887154583.354,
+       "R_needed": {
+        "bulk-terminated": 0.15343897341556806,
+        "electron counting": 0.4550944115931396,
+        "neutral": 0.42763441918345385,
+        "Shen fraction best (f=0.31)": 0.2741492957040339,
+        "Shen fraction low (f=0.21)": 0.310743282888043,
+        "Shen fraction high (f=0.85)": 0.16963648365804873
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 162179142381.3655,
+        "electron counting": 10306069373078.953,
+        "neutral": 9976250945882.291,
+        "Shen fraction best (f=0.31)": 6883246698536.506,
+        "Shen fraction low (f=0.21)": 7902892828142.154,
+        "Shen fraction high (f=0.85)": 1560556242095.9888
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": 180218215145.11008,
+     "rms_log_misfit_coherent": 0.024033510476900628,
+     "fit_coherent": {
+      "35": 14821977527922.51,
+      "65": 15532185084782.229
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 13070000000000.0,
+       "n_coherent_model": 15707299218370.826,
+       "R_needed": {
+        "bulk-terminated": 0.1741382411664175,
+        "electron counting": 0.5164375746161303,
+        "neutral": 0.4853053580599119,
+        "Shen fraction best (f=0.31)": 0.31113671350283567,
+        "Shen fraction low (f=0.21)": 0.3526624420906203,
+        "Shen fraction high (f=0.85)": 0.1925264389945827
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 351854590436.563,
+        "electron counting": 10562669614933.299,
+        "neutral": 10227473708926.062,
+        "Shen fraction best (f=0.31)": 7107710337485.15,
+        "Shen fraction low (f=0.21)": 8132168718396.182,
+        "Shen fraction high (f=0.85)": 1776575979738.3394
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": 800343450512.2863,
+     "rms_log_misfit_coherent": 0.010128340519166853,
+     "fit_coherent": {
+      "35": 14617293464144.707,
+      "65": 15749662434507.518
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 13070000000000.0,
+       "n_coherent_model": 16077490875134.965,
+       "R_needed": {
+        "bulk-terminated": 0.1953011471912529,
+        "electron counting": 0.5792560302467333,
+        "neutral": 0.5443049272128782,
+        "Shen fraction best (f=0.31)": 0.3489647078761942,
+        "Shen fraction low (f=0.21)": 0.3955411034676134,
+        "Shen fraction high (f=0.85)": 0.21592622285036644
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 623508738586.4507,
+        "electron counting": 10866557015228.809,
+        "neutral": 10529591417356.373,
+        "Shen fraction best (f=0.31)": 7402321978724.149,
+        "Shen fraction low (f=0.21)": 8428057667173.797,
+        "Shen fraction high (f=0.85)": 2065397700166.609
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": 1440629288165.0674,
+     "rms_log_misfit_coherent": 0.0027580871104204,
+     "fit_coherent": {
+      "35": 14430075515242.055,
+      "65": 15953864262140.186
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 13070000000000.0,
+       "n_coherent_model": 16429439700948.58,
+       "R_needed": {
+        "bulk-terminated": 0.21614032520022378,
+        "electron counting": 0.6412509841809209,
+        "neutral": 0.602560518121382,
+        "Shen fraction best (f=0.31)": 0.3863041141785256,
+        "Shen fraction low (f=0.21)": 0.4378656518850896,
+        "Shen fraction high (f=0.85)": 0.23902389723038153
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 922448110884.6785,
+        "electron counting": 11184161048892.326,
+        "neutral": 10846539627452.922,
+        "Shen fraction best (f=0.31)": 7716321668131.543,
+        "Shen fraction low (f=0.21)": 8742649216506.659,
+        "Shen fraction high (f=0.85)": 2374611962487.7393
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.45": {
+   "x": 0.45,
+   "eps_c": 0.010984830472205073,
+   "scale": 1.0,
+   "t_nm": [
+    20,
+    30
+   ],
+   "ns_used": [
+    27200000000000.0,
+    12900000000000.0
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.6285649617362976,
+    "electron counting": 0.11693063572257241,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8234123492000801,
+    "Shen fraction low (f=0.21)": -0.5532450611658414,
+    "Shen fraction high (f=0.85)": -2.237019836762179
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -2479394257238.7324,
+     "rms_log_misfit_coherent": 9.294601589422117e-08,
+     "fit_coherent": {
+      "20": 27200002528131.75
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 12900000000000.0,
+       "n_coherent_model": 27625688010068.465,
+       "R_needed": {
+        "bulk-terminated": 0.5082424425857308,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.8751229943912631,
+        "Shen fraction low (f=0.21)": 0.9812600204129879,
+        "Shen fraction high (f=0.85)": 0.5590420535676741
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 61899.066747410776,
+        "electron counting": 17106562171511.422,
+        "neutral": 16321849170111.266,
+        "Shen fraction best (f=0.31)": 10817288201477.018,
+        "Shen fraction low (f=0.21)": 12618770675485.945,
+        "Shen fraction high (f=0.85)": 1564844004006.8838
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": -1015301398196.4635,
+     "rms_log_misfit_coherent": 4.6154330464106195e-09,
+     "fit_coherent": {
+      "20": 27199999874460.223
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 12900000000000.0,
+       "n_coherent_model": 28108528843571.105,
+       "R_needed": {
+        "bulk-terminated": 0.5246828137869767,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.9034118200992869,
+        "Shen fraction low (f=0.21)": null,
+        "Shen fraction high (f=0.85)": 0.5771224157978981
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 1084404666.369326,
+        "electron counting": 17580965541918.54,
+        "neutral": 16795979601426.154,
+        "Shen fraction best (f=0.31)": 11288671642165.834,
+        "Shen fraction low (f=0.21)": 13091259525174.807,
+        "Shen fraction high (f=0.85)": 2009778050542.7632
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": 448437174319.716,
+     "rms_log_misfit_coherent": 3.856071425462419e-08,
+     "fit_coherent": {
+      "20": 27199998951148.594
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 12900000000000.0,
+       "n_coherent_model": 28584281534375.08,
+       "R_needed": {
+        "bulk-terminated": 0.5409260682713584,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.9316827695654145,
+        "Shen fraction low (f=0.21)": null,
+        "Shen fraction high (f=0.85)": 0.5951889963587067
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 143456959352.1433,
+        "electron counting": 18055161098739.785,
+        "neutral": 17269922100348.19,
+        "Shen fraction best (f=0.31)": 11760014691706.52,
+        "Shen fraction low (f=0.21)": 13563646477772.666,
+        "Shen fraction high (f=0.85)": 2459695523356.867
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": 1911190391857.2417,
+     "rms_log_misfit_coherent": 6.726089318221398e-07,
+     "fit_coherent": {
+      "20": 27199981705043.207
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 12900000000000.0,
+       "n_coherent_model": 29059079505067.254,
+       "R_needed": {
+        "bulk-terminated": 0.5573853250571208,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.9597276195583343,
+        "Shen fraction low (f=0.21)": null,
+        "Shen fraction high (f=0.85)": 0.6132196868357389
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 493769862336.06665,
+        "electron counting": 18528563552787.543,
+        "neutral": 17743079988410.023,
+        "Shen fraction best (f=0.31)": 12230695092942.379,
+        "Shen fraction low (f=0.21)": 14035314886038.785,
+        "Shen fraction high (f=0.85)": 2912456265987.441
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "scaled_to_77K": {
+  "0.35": {
+   "x": 0.35,
+   "eps_c": 0.00852295188248124,
+   "scale": 0.7440550688360451,
+   "t_nm": [
+    20,
+    35,
+    40,
+    70,
+    85
+   ],
+   "ns_used": [
+    10959931163954.945,
+    11956964956195.244,
+    13601326658322.904,
+    16584987484355.445,
+    11346839799749.688
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.635743684765909,
+    "electron counting": 0.10306627644418737,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8256611234476698,
+    "Shen fraction low (f=0.21)": -0.5547559970260633,
+    "Shen fraction high (f=0.85)": -2.2431292333544754
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -9759099824898.451,
+     "rms_log_misfit_coherent": 0.13801909655474714,
+     "fit_coherent": {
+      "20": 12703918955923.746,
+      "35": 13130247357980.799,
+      "40": 13202986170742.35,
+      "70": 13422913875950.193
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 11346839799749.688,
+       "n_coherent_model": 13474480672088.186,
+       "R_needed": {
+        "bulk-terminated": 0.09513045853093476,
+        "electron counting": 0.27169786710727073,
+        "neutral": 0.25398061139139866,
+        "Shen fraction best (f=0.31)": 0.16678789837633073,
+        "Shen fraction low (f=0.21)": 0.18798071935627536,
+        "Shen fraction high (f=0.85)": 0.10490414525574793
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 3.484024866851689e-206,
+        "electron counting": 5657957732545.779,
+        "neutral": 5113761713164.738,
+        "Shen fraction best (f=0.31)": 803060859592.6357,
+        "Shen fraction low (f=0.21)": 2199631142313.6084,
+        "Shen fraction high (f=0.85)": 3.98627847033203e-154
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": -8895345927514.518,
+     "rms_log_misfit_coherent": 0.1142134509830096,
+     "fit_coherent": {
+      "20": 12144425492699.88,
+      "35": 13162227225463.637,
+      "40": 13336542195356.258,
+      "70": 13866942623037.654
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 11346839799749.688,
+       "n_coherent_model": 13993034899328.459,
+       "R_needed": {
+        "bulk-terminated": 0.11820134787630868,
+        "electron counting": 0.3376597009000439,
+        "neutral": 0.3155956460162726,
+        "Shen fraction best (f=0.31)": 0.2071562119726801,
+        "Shen fraction low (f=0.21)": 0.23347800878396557,
+        "Shen fraction high (f=0.85)": 0.13033408726952567
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 2.4423209855553915e-193,
+        "electron counting": 6169873437854.673,
+        "neutral": 5625197686046.466,
+        "Shen fraction best (f=0.31)": 1297387900720.7112,
+        "Shen fraction low (f=0.21)": 2705682408101.942,
+        "Shen fraction high (f=0.85)": 2.794445022456625e-141
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": -8020378792448.438,
+     "rms_log_misfit_coherent": 0.09312463015840508,
+     "fit_coherent": {
+      "20": 11597287786908.383,
+      "35": 13204709827712.297,
+      "40": 13480379040781.285,
+      "70": 14320038060499.61
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 11346839799749.688,
+       "n_coherent_model": 14520115202778.176,
+       "R_needed": {
+        "bulk-terminated": 0.1417100480110887,
+        "electron counting": 0.40477196033618945,
+        "neutral": 0.37832254196216764,
+        "Shen fraction best (f=0.31)": 0.2483301399756616,
+        "Shen fraction low (f=0.21)": 0.27988354645394575,
+        "Shen fraction high (f=0.85)": 0.15625064790009915
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 3.2309827832427468e-180,
+        "electron counting": 6693164835044.452,
+        "neutral": 6148066592943.258,
+        "Shen fraction best (f=0.31)": 1809015769805.023,
+        "Shen fraction low (f=0.21)": 3224242287325.4805,
+        "Shen fraction high (f=0.85)": 3.6968500360332866e-128
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": -7134576972572.176,
+     "rms_log_misfit_coherent": 0.07742279860031213,
+     "fit_coherent": {
+      "20": 11061903505831.387,
+      "35": 13257764234569.516,
+      "40": 13634771351928.791,
+      "70": 14783567056401.156
+     },
+     "relaxed": {
+      "85": {
+       "n_measured": 11346839799749.688,
+       "n_coherent_model": 15057509743302.715,
+       "R_needed": {
+        "bulk-terminated": 0.1656857525172828,
+        "electron counting": 0.47323527338640015,
+        "neutral": 0.4423122006542822,
+        "Shen fraction best (f=0.31)": 0.29033285376491047,
+        "Shen fraction low (f=0.21)": 0.32722322852260494,
+        "Shen fraction high (f=0.85)": 0.18268255768922226
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 7.895224478165607e-167,
+        "electron counting": 7227440875730.706,
+        "neutral": 6681964886804.203,
+        "Shen fraction best (f=0.31)": 2334672726260.147,
+        "Shen fraction low (f=0.21)": 3754581414529.5884,
+        "Shen fraction high (f=0.85)": 9.033689533949966e-115
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.25": {
+   "x": 0.25,
+   "eps_c": 0.006073034150958274,
+   "scale": 0.7208333333333333,
+   "t_nm": [
+    35,
+    65,
+    90
+   ],
+   "ns_used": [
+    10430458333333.334,
+    11468458333333.334,
+    9421291666666.666
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.6429261199205585,
+    "electron counting": 0.08923068671857255,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8279110605387283,
+    "Shen fraction low (f=0.21)": -0.5562677141927673,
+    "Shen fraction high (f=0.85)": -2.2492417891220136
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -4789644471789.143,
+     "rms_log_misfit_coherent": 0.03350234960534245,
+     "fit_coherent": {
+      "35": 10785827230409.926,
+      "65": 11090607526585.113
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 9421291666666.666,
+       "n_coherent_model": 11170616895973.666,
+       "R_needed": {
+        "bulk-terminated": 0.11520090020715046,
+        "electron counting": 0.3410375207505836,
+        "neutral": 0.32046173901262087,
+        "Shen fraction best (f=0.31)": 0.2054536345765002,
+        "Shen fraction low (f=0.21)": 0.2328749347274771,
+        "Shen fraction high (f=0.85)": 0.1269201870733045
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 4.035629980851123e-99,
+        "electron counting": 5990475567903.316,
+        "neutral": 5654919864097.649,
+        "Shen fraction best (f=0.31)": 2550646951483.646,
+        "Shen fraction low (f=0.21)": 3566059703628.98,
+        "Shen fraction high (f=0.85)": 1.0140246669044104e-59
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": -4169830542127.905,
+     "rms_log_misfit_coherent": 0.015084107303775903,
+     "fit_coherent": {
+      "35": 10588986002541.607,
+      "65": 11296766018000.871
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 9421291666666.666,
+       "n_coherent_model": 11516040178343.105,
+       "R_needed": {
+        "bulk-terminated": 0.13523422431413912,
+        "electron counting": 0.4014870642617973,
+        "neutral": 0.37726317860821484,
+        "Shen fraction best (f=0.31)": 0.24196937501562635,
+        "Shen fraction low (f=0.21)": 0.274147076330476,
+        "Shen fraction high (f=0.85)": 0.1495624224212227
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 2.480508590856516e-91,
+        "electron counting": 6285569998015.899,
+        "neutral": 5949376747496.409,
+        "Shen fraction best (f=0.31)": 2841033206792.855,
+        "Shen fraction low (f=0.21)": 3857877165686.4424,
+        "Shen fraction high (f=0.85)": 6.23283028065115e-52
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": -3528495633245.7866,
+     "rms_log_misfit_coherent": 0.002345371757194854,
+     "fit_coherent": {
+      "35": 10406003049364.87,
+      "65": 11495364871261.258
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 9421291666666.666,
+       "n_coherent_model": 11847529453252.14,
+       "R_needed": {
+        "bulk-terminated": 0.15587276417847684,
+        "electron counting": 0.46239124725791747,
+        "neutral": 0.4345301282187871,
+        "Shen fraction best (f=0.31)": 0.27854787678893983,
+        "Shen fraction low (f=0.21)": 0.3155543839270128,
+        "Shen fraction high (f=0.85)": 0.17234011766784527
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 5.5623372974568465e-83,
+        "electron counting": 6600376093465.159,
+        "neutral": 6263940125324.441,
+        "Shen fraction best (f=0.31)": 3152828692563.0386,
+        "Shen fraction low (f=0.21)": 4170882932994.506,
+        "Shen fraction high (f=0.85)": 1.397681484661411e-43
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": -2881284558557.4463,
+     "rms_log_misfit_coherent": 0.01951327359638531,
+     "fit_coherent": {
+      "35": 10228970636824.697,
+      "65": 11694525183653.842
+     },
+     "relaxed": {
+      "90": {
+       "n_measured": 9421291666666.666,
+       "n_coherent_model": 12174613149653.46,
+       "R_needed": {
+        "bulk-terminated": 0.17659406762008262,
+        "electron counting": 0.52356222355857,
+        "neutral": 0.4920083781832203,
+        "Shen fraction best (f=0.31)": 0.3154937337007061,
+        "Shen fraction low (f=0.21)": 0.3576040121656037,
+        "Shen fraction high (f=0.85)": 0.19522821179589106
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 1.776029996380467e-74,
+        "electron counting": 6920806713671.955,
+        "neutral": 6584207777985.818,
+        "Shen fraction best (f=0.31)": 3470785228223.2773,
+        "Shen fraction low (f=0.21)": 4489881758914.991,
+        "Shen fraction high (f=0.85)": 4.462791889001801e-35
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.45": {
+   "x": 0.45,
+   "eps_c": 0.010984830472205073,
+   "scale": 0.7440550688360451,
+   "t_nm": [
+    20,
+    30
+   ],
+   "ns_used": [
+    20238297872340.426,
+    9598310387984.982
+   ],
+   "Lambda_e_per_nm": {
+    "bulk-terminated": -2.6285649617362976,
+    "electron counting": 0.11693063572257241,
+    "neutral": 0.0,
+    "Shen fraction best (f=0.31)": -0.8234123492000801,
+    "Shen fraction low (f=0.21)": -0.5532450611658414,
+    "Shen fraction high (f=0.85)": -2.237019836762179
+   },
+   "phi": {
+    "0.5": {
+     "dsig_cm2": -9769093345110.648,
+     "rms_log_misfit_coherent": 5.327909226336325e-10,
+     "fit_coherent": {
+      "20": 20238297861557.645
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 9598310387984.982,
+       "n_coherent_model": 20561156719132.582,
+       "R_needed": {
+        "bulk-terminated": 0.38025969586274444,
+        "electron counting": null,
+        "neutral": 0.9763752207800815,
+        "Shen fraction best (f=0.31)": 0.6547411860991263,
+        "Shen fraction low (f=0.21)": 0.734053934499914,
+        "Shen fraction high (f=0.85)": 0.4184637904376121
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 4.887456072748232e-59,
+        "electron counting": 10110005302790.7,
+        "neutral": 9333048817757.576,
+        "Shen fraction best (f=0.31)": 3912018235924.013,
+        "Shen fraction low (f=0.21)": 5677599799204.305,
+        "Shen fraction high (f=0.85)": 1.9753974167878538e-35
+       }
+      }
+     }
+    },
+    "1.0": {
+     "dsig_cm2": -8308673961444.12,
+     "rms_log_misfit_coherent": 6.552464481680182e-07,
+     "fit_coherent": {
+      "20": 20238284611271.973
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 9598310387984.982,
+       "n_coherent_model": 21033073399929.664,
+       "R_needed": {
+        "bulk-terminated": 0.39657830222020346,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.6828425473962502,
+        "Shen fraction low (f=0.21)": 0.7655575706716302,
+        "Shen fraction high (f=0.85)": 0.4363792417695578
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 8.539557832787208e-55,
+        "electron counting": 10577364367389.996,
+        "neutral": 9799780689853.482,
+        "Shen fraction best (f=0.31)": 4369755621680.3633,
+        "Shen fraction low (f=0.21)": 6139753839199.835,
+        "Shen fraction high (f=0.85)": 3.4515080663909006e-31
+       }
+      }
+     }
+    },
+    "1.5": {
+     "dsig_cm2": -6848654152369.988,
+     "rms_log_misfit_coherent": 1.1397361982154347e-06,
+     "fit_coherent": {
+      "20": 20238274806032.895
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 9598310387984.982,
+       "n_coherent_model": 21504532849797.344,
+       "R_needed": {
+        "bulk-terminated": 0.4128294418048451,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.7109220344238266,
+        "Shen fraction low (f=0.21)": 0.797036931446694,
+        "Shen fraction high (f=0.85)": 0.45428549074120894
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 1.4802330301483024e-50,
+        "electron counting": 11044666684055.127,
+        "neutral": 10266497771673.158,
+        "Shen fraction best (f=0.31)": 4828512852060.996,
+        "Shen fraction low (f=0.21)": 6602316606730.712,
+        "Shen fraction high (f=0.85)": 5.982810971082018e-27
+       }
+      }
+     }
+    },
+    "2.0": {
+     "dsig_cm2": -5388958006094.748,
+     "rms_log_misfit_coherent": 3.64734963800402e-07,
+     "fit_coherent": {
+      "20": 20238290490726.93
+     },
+     "relaxed": {
+      "30": {
+       "n_measured": 9598310387984.982,
+       "n_coherent_model": 21975816017233.71,
+       "R_needed": {
+        "bulk-terminated": 0.4290512862187936,
+        "electron counting": null,
+        "neutral": null,
+        "Shen fraction best (f=0.31)": 0.7389839566400436,
+        "Shen fraction low (f=0.21)": 0.828496784070729,
+        "Shen fraction high (f=0.85)": 0.47218546574705267
+       },
+       "n_model_at_R1": {
+        "bulk-terminated": 2.5493178293122958e-46,
+        "electron counting": 11511963824559.463,
+        "neutral": 10733246576617.666,
+        "Shen fraction best (f=0.31)": 5288142132163.412,
+        "Shen fraction low (f=0.21)": 7065269037378.992,
+        "Shen fraction high (f=0.85)": 1.030387759856358e-22
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

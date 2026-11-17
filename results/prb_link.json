@@ -1,0 +1,250 @@
+{
+ "input": {
+  "source": "T. M. Mahim, A. S. M. Mohsin and M. M. Rahman, Phys. Rev. B 114, L291304 (2026); code and results archived at doi:10.5281/zenodo.21791358 (version 9: doi:10.5281/zenodo.23743716), file results/revised_mobilities.json, keys three_components/<mu_q_H>/'misfit lines + threading line charges' and pairs/<mu_q_H>/'misfit lines'. Values copied without change.",
+  "meaning": "L_A_f1_per_cm is the in-plane line length per area (cm^-1) that the fit requires if each line carries f = 1 electron charge per in-plane lattice constant a = 0.3189 nm. The fit fixes only L_A f^2. relaxed_fraction_f1 = L_A b/(2 mismatch) with b = a (scripts/disorder_fit.py, relaxation_from_misfit, of that archive).",
+  "a_lattice_m": 3.189e-10,
+  "mismatch": 0.0242,
+  "adopted_mu_q_H": 94.95668446330679,
+  "adopted_range": [
+   94.14945749863962,
+   95.7998569906128
+  ],
+  "L_A_f1_per_cm": {
+   "misfit + threading lines, mu_q_H = 94.1": 6819.642937594814,
+   "misfit + threading lines, mu_q_H = 95.0": 5267.89883792389,
+   "misfit + threading lines, mu_q_H = 95.8": 5206.638551507986,
+   "roughness + misfit lines only, mu_q_H = 95.0": 11006.068574540785
+  },
+  "relaxed_fraction_f1": {
+   "misfit + threading lines, mu_q_H = 94.1": 0.004493355646278897,
+   "misfit + threading lines, mu_q_H = 95.0": 0.0034709358252353892,
+   "misfit + threading lines, mu_q_H = 95.8": 0.0034305723844543323,
+   "roughness + misfit lines only, mu_q_H = 95.0": 0.00725172576120053
+  },
+  "worst_factor": {
+   "misfit + threading lines, mu_q_H = 94.1": 1.023384542047263,
+   "misfit + threading lines, mu_q_H = 95.0": 1.0180989062502552,
+   "misfit + threading lines, mu_q_H = 95.8": 1.0140553438068582,
+   "roughness + misfit lines only, mu_q_H = 95.0": 1.1897999874869178
+  },
+  "threading_Nf2_cm2": {
+   "misfit + threading lines, mu_q_H = 94.1": 3369459305.8553586,
+   "misfit + threading lines, mu_q_H = 95.0": 4292025466.4771705,
+   "misfit + threading lines, mu_q_H = 95.8": 4301140282.603461
+  }
+ },
+ "P_ZB_GaN_Cm2": -0.027514851623935854,
+ "k_proper_Cm2": -0.62302121085565,
+ "cases": {
+  "f = 1 (assumed in the Letter)": {
+   "Lambda_e_per_nm": 3.1357792411414236,
+   "f": 1.0,
+   "fits": {
+    "misfit + threading lines, mu_q_H = 94.1": {
+     "relaxed_fraction": 0.004493355646278897,
+     "relieved_strain_percent": 0.01087392066399493,
+     "L_A_per_cm": 6819.642937594813,
+     "line_spacing_nm": 4399.05729295859,
+     "delta_bound_charge_cm2": 298417441130.91925,
+     "delta_relative_to_measured_density": 0.006487335676759114,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.0034709358252353892,
+     "relieved_strain_percent": 0.008399664697069643,
+     "L_A_per_cm": 5267.89883792389,
+     "line_spacing_nm": 5694.870179364184,
+     "delta_bound_charge_cm2": 230515425182.10236,
+     "delta_relative_to_measured_density": 0.005011204895263095,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.8": {
+     "relaxed_fraction": 0.0034305723844543323,
+     "relieved_strain_percent": 0.008301985170379484,
+     "L_A_per_cm": 5206.638551507986,
+     "line_spacing_nm": 5761.874903206248,
+     "delta_bound_charge_cm2": 227834766079.79047,
+     "delta_relative_to_measured_density": 0.004952929697386749,
+     "possible": true
+    },
+    "roughness + misfit lines only, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.00725172576120053,
+     "relieved_strain_percent": 0.01754917634210528,
+     "L_A_per_cm": 11006.068574540785,
+     "line_spacing_nm": 2725.7689516305522,
+     "delta_bound_charge_cm2": 481609206080.25934,
+     "delta_relative_to_measured_density": 0.010469765349570856,
+     "possible": true
+    }
+   }
+  },
+  "bulk-terminated (H, improper)": {
+   "Lambda_e_per_nm": 2.660898448354229,
+   "f": 0.8485605151801636,
+   "fits": {
+    "misfit + threading lines, mu_q_H = 94.1": {
+     "relaxed_fraction": 0.006240295493060752,
+     "relieved_strain_percent": 0.01510151509320702,
+     "L_A_per_cm": 9471.003507812491,
+     "line_spacing_nm": 3167.562969990819,
+     "delta_bound_charge_cm2": 369461063285.5846,
+     "delta_relative_to_measured_density": 0.008031762245338796,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.004820376327179136,
+     "relieved_strain_percent": 0.011665310711773508,
+     "L_A_per_cm": 7315.96783428881,
+     "line_spacing_nm": 4100.619450429325,
+     "delta_bound_charge_cm2": 285393755032.3831,
+     "delta_relative_to_measured_density": 0.006204212065921372,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.8": {
+     "relaxed_fraction": 0.004764320270766364,
+     "relieved_strain_percent": 0.011529655055254601,
+     "L_A_per_cm": 7230.89059595773,
+     "line_spacing_nm": 4148.8665333660065,
+     "delta_bound_charge_cm2": 282074916969.52386,
+     "delta_relative_to_measured_density": 0.006132063412380953,
+     "possible": true
+    },
+    "roughness + misfit lines only, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.01007107274537855,
+     "relieved_strain_percent": 0.024371996043816086,
+     "L_A_per_cm": 15285.039851875878,
+     "line_spacing_nm": 1962.7034205159896,
+     "delta_bound_charge_cm2": 596264912306.1017,
+     "delta_relative_to_measured_density": 0.012962280702306558,
+     "possible": true
+    }
+   }
+  },
+  "Shen et al., largest strict mobility bound": {
+   "Lambda_e_per_nm": 1.4179912661218281,
+   "f": 0.45219741476625097,
+   "fits": {
+    "misfit + threading lines, mu_q_H = 94.1": {
+     "relaxed_fraction": 0.021974279481423276,
+     "relieved_strain_percent": 0.053177756345044326,
+     "L_A_per_cm": 33350.74088745333,
+     "line_spacing_nm": 899.5302413592291,
+     "delta_bound_charge_cm2": 886483846326.4978,
+     "delta_relative_to_measured_density": 0.01927138796361952,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.01697424372561515,
+     "relieved_strain_percent": 0.04107766981598867,
+     "L_A_per_cm": 25762.10085668778,
+     "line_spacing_nm": 1164.5013023932818,
+     "delta_bound_charge_cm2": 684772981024.8192,
+     "delta_relative_to_measured_density": 0.014886369152713462,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.8": {
+     "relaxed_fraction": 0.016776850597098974,
+     "relieved_strain_percent": 0.04059997844497951,
+     "L_A_per_cm": 25462.5139197112,
+     "line_spacing_nm": 1178.2025959650518,
+     "delta_bound_charge_cm2": 676809770219.5062,
+     "delta_relative_to_measured_density": 0.014713255874337092,
+     "possible": true
+    },
+    "roughness + misfit lines only, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.03546379613445952,
+     "relieved_strain_percent": 0.08582238664539203,
+     "L_A_per_cm": 53824.01169356666,
+     "line_spacing_nm": 557.3720548887619,
+     "delta_bound_charge_cm2": 1430676370034.8733,
+     "delta_relative_to_measured_density": 0.03110166021814942,
+     "possible": true
+    }
+   }
+  },
+  "Shen et al., largest estimate from the mobility drop": {
+   "Lambda_e_per_nm": 1.0166321645985266,
+   "f": 0.3242039972904701,
+   "fits": {
+    "misfit + threading lines, mu_q_H = 94.1": {
+     "relaxed_fraction": 0.042749797678087904,
+     "relieved_strain_percent": 0.10345451038097274,
+     "L_A_per_cm": 64882.10121102085,
+     "line_spacing_nm": 462.3771339098403,
+     "delta_bound_charge_cm2": 1464197184807.4849,
+     "delta_relative_to_measured_density": 0.03183037358277141,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.03302249275668176,
+     "relieved_strain_percent": 0.07991443247116986,
+     "L_A_per_cm": 50118.80368213851,
+     "line_spacing_nm": 598.5777352201942,
+     "delta_bound_charge_cm2": 1131033210817.7974,
+     "delta_relative_to_measured_density": 0.024587678496039073,
+     "possible": true
+    },
+    "misfit + threading lines, mu_q_H = 95.8": {
+     "relaxed_fraction": 0.03263847487276228,
+     "relieved_strain_percent": 0.07898510919208472,
+     "L_A_per_cm": 49535.973152765575,
+     "line_spacing_nm": 605.6204832694422,
+     "delta_bound_charge_cm2": 1117880449048.3813,
+     "delta_relative_to_measured_density": 0.024301748892356118,
+     "possible": true
+    },
+    "roughness + misfit lines only, mu_q_H = 95.0": {
+     "relaxed_fraction": 0.0689929383544413,
+     "relieved_strain_percent": 0.16696291081774794,
+     "L_A_per_cm": 104711.76595656815,
+     "line_spacing_nm": 286.5007549623722,
+     "delta_bound_charge_cm2": 2363034952138.4595,
+     "delta_relative_to_measured_density": 0.05137032504648825,
+     "possible": true
+    }
+   }
+  },
+  "electron counting": {
+   "Lambda_e_per_nm": 0.05476603513413331,
+   "f": 0.017464888604275114,
+   "fits": {
+    "misfit + threading lines, mu_q_H = 94.1": {
+     "relaxed_fraction": 14.731234883515103,
+     "relieved_strain_percent": 35.649588418106546,
+     "L_A_per_cm": 22357847.86334685,
+     "line_spacing_nm": 1.3418107227208391,
+     "delta_bound_charge_cm2": 265008940418434.72,
+     "delta_relative_to_measured_density": 5.761063922139885,
+     "possible": false
+    },
+    "misfit + threading lines, mu_q_H = 95.0": {
+     "relaxed_fraction": 11.379284199213863,
+     "relieved_strain_percent": 27.53786776209755,
+     "L_A_per_cm": 17270534.814736627,
+     "line_spacing_nm": 1.7370625937073794,
+     "delta_bound_charge_cm2": 204708707192531.75,
+     "delta_relative_to_measured_density": 4.450189286794169,
+     "possible": false
+    },
+    "misfit + threading lines, mu_q_H = 95.8": {
+     "relaxed_fraction": 11.246954739081989,
+     "relieved_strain_percent": 27.217630468578413,
+     "L_A_per_cm": 17069696.1232853,
+     "line_spacing_nm": 1.7575005309600136,
+     "delta_bound_charge_cm2": 202328153878910.0,
+     "delta_relative_to_measured_density": 4.398438127802391,
+     "possible": false
+    },
+    "roughness + misfit lines only, mu_q_H = 95.0": {
+     "relaxed_fraction": 23.77440912952203,
+     "relieved_strain_percent": 57.53407009344332,
+     "L_A_per_cm": 36082828.53147903,
+     "line_spacing_nm": 0.8314204074613412,
+     "delta_bound_charge_cm2": 427691977102303.4,
+     "delta_relative_to_measured_density": 9.29765167613703,
+     "possible": false
+    }
+   }
+  }
+ }
+}

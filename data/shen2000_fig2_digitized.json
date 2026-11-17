@@ -1,0 +1,58 @@
+{
+ "source": "B. Shen, T. Someya and Y. Arakawa, Appl. Phys. Lett. 76, 2746 (2000), doi:10.1063/1.126463, Fig. 2: 2DEG mobility (solid circles) and sheet concentration (open circles) of Al0.22Ga0.78N/GaN heterostructures versus the thickness of the Si-doped Al0.22Ga0.78N layer, (a) 300 K and (b) 77 K. The undoped Al0.22Ga0.78N spacer is 3 nm thick in all samples.",
+ "method": "Symbol centres located as connected components of the embedded 1-bit figure image of the published PDF (896 x 1058 pixels, page 3), axes calibrated on the major tick marks of each panel (located by their length on the frame; the tick labels of the right axis of panel (b) sit about 9 pixels below their ticks). Calibrations: panel (a) left 100 cm^2/Vs per 76 px, right 0.5e13 cm^-2 per 76 px; panel (b) left 500 cm^2/Vs per 62.5 px, right 0.4e13 cm^-2 per 88.5 px. The thickness positions fall on the nominal values. The values were read twice, independently, with agreement within 0.3 percent; the three 300 K mobilities quoted in the text (911, 943, 598) agree within one unit. Estimated reading uncertainty: about 1 percent of each axis range.",
+ "text_values": {
+  "n_AlGaN_carrier_concentration_300K_cm3": 1.26e+18,
+  "n_AlGaN_mobility_300K_cm2Vs": 83,
+  "iGaN_carrier_concentration_300K_cm3": 4.47e+16,
+  "iGaN_mobility_300K_cm2Vs": 248,
+  "relaxation_R_total_103nm": 0.78,
+  "pseudomorphic_total_53nm": true,
+  "mobility_300K_cm2Vs_t25_t50_t100_text": [
+   911,
+   943,
+   598
+  ],
+  "note": "The 2DEG values were obtained with a multilayer model that removes the i-GaN layer (text)."
+ },
+ "thickness_nm": [
+  25,
+  35,
+  50,
+  65,
+  75,
+  100
+ ],
+ "ns_300K_1e13cm2": [
+  1.727,
+  1.605,
+  1.681,
+  1.451,
+  0.944,
+  0.743
+ ],
+ "ns_77K_1e13cm2": [
+  1.302,
+  1.132,
+  1.214,
+  1.059,
+  0.749,
+  0.645
+ ],
+ "mu_300K_cm2Vs": [
+  911,
+  905,
+  943,
+  831,
+  609,
+  599
+ ],
+ "mu_77K_cm2Vs": [
+  2727,
+  2899,
+  3019,
+  2711,
+  1016,
+  1108
+ ]
+}

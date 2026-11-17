@@ -1,0 +1,34 @@
+{
+ "source": "R. Elwaradi, J. Mehta, T. H. Ngo, M. Nemoz, C. Bougerol, F. Medjdoub and Y. Cordier, J. Appl. Phys. 133, 145705 (2023), doi:10.1063/5.0147048, Tables I and II and text; read from the author version deposited in HAL (hal-04086494, open access). Values copied without change.",
+ "structure_from_text": "NH3-MBE on Al-polar bulk AlN substrates (HexaTech, dislocation density below 1e3 cm^-2). AlN buffer, GaN channel of 500 down to 8 nm, then a barrier made of a 1 nm AlN spacer plus a 19 nm AlGaN layer with nominal Al content 30%, capped with a thin GaN layer (cap thickness not given). The 2DEG density was measured by mercury-probe capacitance-voltage or by the Hall effect; the sheet resistance by van der Pauw or eddy current.",
+ "text_on_barrier_relaxation": "On thin, highly compressed GaN channels the 30% barrier has a larger mismatch with the channel; XRD shows that it 'relaxed approximately 20%-25% of its mismatch strain with GaN'. The authors estimate this mismatch at about 1.7% for the barrier on sub-10 nm channels (in-plane lattice of AlN).",
+ "table_I": {
+  "columns": ["t_AlN_nm", "t_GaN_nm", "FWHM_002_deg", "FWHM_302_deg", "GaN_relaxation_percent"],
+  "rows": [
+   [300, 500, 0.3497, 0.4424, 100],
+   [250, 200, null, 0.561, 88],
+   [250, 100, 0.81, 0.709, 72],
+   [300, 50, 0.8573, null, 50],
+   [300, 20, null, null, 8],
+   ["220-250", "8-9", null, null, 0]
+  ]
+ },
+ "table_II": {
+  "columns": ["t_AlN_nm", "t_GaN_nm", "Al_percent", "t_AlGaN_nm", "AlGaN_relaxation_percent", "Rsh_contactless_ohm", "Rsh_ohm", "n_2DEG_cm2", "mu_cm2Vs"],
+  "rows": [
+   [300, 500, 30, 19, 0, 420, 330, 1.0e13, 1920],
+   [250, 200, 30, 19, 0, 430, 410, 9.0e12, 1700],
+   [250, 100, 30, 19, 0, 895, 840, 8.0e12, 930],
+   [300, 50, 30, 19, 0, null, 1700, 7.8e12, 460],
+   [300, 20, 30, 19, 25, 30000, 9000, 2.2e12, 310],
+   [250, 8, 30, 19, 19, 30000, null, null, null],
+   [250, 8, 82, 14, 0, null, 21500, 2.0e12, 149],
+   [220, 9, 86, 22, 0, 1300, 1050, 1.2e13, 480],
+   [220, 9, 86, 45, 0, 980, 880, 1.6e13, 450]
+  ]
+ },
+ "notes": [
+  "Consistency check: for the 20 nm channel, 1/(e n mu) = 1/(1.602e-19 * 2.2e12 * 310) = 9.2 kOhm/sq, the van der Pauw value of Table II (9000).",
+  "On the 20 nm channel (GaN relaxation 8 percent, so its in-plane lattice is close to that of AlN) the 30 percent barrier is under compression, not tension: its relaxation is a misfit network of the opposite sign to that of the Shen and Hiroki series."
+ ]
+}
