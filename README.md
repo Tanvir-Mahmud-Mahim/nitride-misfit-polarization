@@ -9,7 +9,7 @@ and Electronic Engineering, BRAC University). The paper itself is not in
 this repository.
 
 - Repository: https://github.com/Tanvir-Mahmud-Mahim/nitride-misfit-polarization
-- Archived on Zenodo: https://doi.org/10.5281/zenodo.24311692 (version 1.3.0; all versions: https://doi.org/10.5281/zenodo.24297966)
+- Archived on Zenodo: https://doi.org/10.5281/zenodo.24315036 (version 1.3.1; all versions: https://doi.org/10.5281/zenodo.24297966)
 - Companion work (the GaN/AlN hole gas): T. M. Mahim, A. S. M. Mohsin and
   M. M. Rahman, Phys. Rev. B 114, L291304 (2026),
   https://doi.org/10.1103/zn44-nmx8; code at
@@ -81,7 +81,7 @@ trapped charge remains (`scripts/run_prediction.py`, key `odd_even_Al0.30`).
 | `scripts/run_prb_link.py` | What the line charge means for the GaN/AlN hole gas of the PRB paper |
 | `scripts/run_kp_check.py` | Recomputes the hole gas of the PRB paper with [kpenvelope](https://doi.org/10.5281/zenodo.22015269), an independent six-band solver |
 | `scripts/make_numbers.py` | Writes every number used in the paper into `paper/numbers.tex` |
-| `scripts/figures.py` | The three figures of the Letter and Fig. S1 (1000 dpi, Times-metric font) |
+| `scripts/figures.py` | The three figures of the Letter and Figs. S1 and S2 (1000 dpi, Times-metric font) |
 | `data/` | Digitized data and copied published values, each with its source |
 | `dft/pseudo/` | Pseudopotentials and the `ld1.x` inputs that generate them |
 | `dft/dft_runs.tar.gz` | Every DFT input and output file (`tar xzf dft/dft_runs.tar.gz -C dft` restores `dft/runs/`; wave functions and charge densities are not kept) |

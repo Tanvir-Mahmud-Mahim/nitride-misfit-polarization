@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.3.1 (2026-11)
+
+- `scripts/figures.py`: new overview figure (Fig. 1). Panel (a) draws the
+  relaxed sample of Shen et al. as they report it, with its misfit network,
+  and the charge per length of one misfit dislocation in each case; panel (b)
+  lists the evidence, the findings and the consequences. Every number is read
+  from `paper/numbers.tex` and cross-checked against the results and data
+  files, and the script stops if any text leaves its box or overlaps other
+  text. Run `scripts/make_numbers.py` first.
+- The former Fig. 1(b), AlN on relaxed GaN, is now Fig. S1; the hole-gas
+  figure is now Fig. S2. Figs. 2 and 3 are slightly shorter; Fig. 3(a) says
+  "electron density".
+
 ## 1.3.0 (2026-11)
 
 - `scripts/run_prediction.py`: splits the charge change on relaxation, per unit
