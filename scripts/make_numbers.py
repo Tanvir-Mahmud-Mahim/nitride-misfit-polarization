@@ -252,12 +252,30 @@ def extra(out):
         out["AlThirtyNeutralLo"], out["AlThirtyNeutralHi"] = f(v[0], 1), f(v[1], 1)
         out["FzeroHSE"] = f(a3["HSE"]["f_zero_relaxed"], 2)
         out["FzeroPBE"] = f(a3["PBEsol"]["f_zero_relaxed"], 2)
+        eo = P["odd_even_Al0.30"]
+        v = sorted(abs(eo[c]["sum_trapped_C_m2"]) for c in ("PBEsol", "HSE"))
+        out["SumTrapLo"], out["SumTrapHi"] = f(v[0], 2), f(v[1], 2)
+        out["EvenBoundMax"] = "%.0e" % max(abs(eo[c][k]["even_C_m2"]) for c in ("PBEsol", "HSE")
+                                          for k in ("bare ends", "neutral", "Shen fraction", "electron counting"))
+        out["DqHalf"] = f(eo["PBEsol"]["dq_e_per_nm_for_dsig_1e-3"]["0.5"], 2)
+        out["DqQuarter"] = f(eo["PBEsol"]["dq_e_per_nm_for_dsig_1e-3"]["0.25"], 2)
+        out["DlamHalf"] = f(eo["PBEsol"]["dLambda_e_per_nm_for_dsig_1e-3"]["0.5"], 2)
+        out["DlamQuarter"] = f(eo["PBEsol"]["dLambda_e_per_nm_for_dsig_1e-3"]["0.25"], 2)
+        out["MisStretch"] = f(abs(P["cases"]["Al0.30Ga0.70N on GaN"]["PBEsol"]["eps_c"]) * 100, 2)
         out["FracHSE"] = f(P["f"]["HSE"], 2)
         out["FracPBE"] = f(P["f"]["PBEsol"], 2)
     if os.path.exists(os.path.join(R, "shen_uncertainty_hse.json")):
         bh = J("shen_uncertainty_hse.json")["phi"]["0.5"]["fit_B"]
         out["FracLPHSE"] = f(bh["fraction_of_bulk"], 2)
         out["FracLPHSEsig"] = f(bh["fraction_sigma"], 2)
+    if os.path.exists(os.path.join(R, "shen_uncertainty.json")):
+        b = J("shen_uncertainty.json")["phi"]["0.5"]["fit_B"]
+        out["LamOneSigLo"] = f(abs(b["values"]["Lambda_e_per_nm"]) - b["sigma"]["Lambda_e_per_nm"], 1)
+        b0 = J("shen_analysis.json")["baseline"]["77K_mu2_0"]
+        out["LineSpacing"] = "%d" % (10 * round(b0["line_spacing_nm_hexagonal"] / 10))
+        out["StripWidth"] = "%d" % round(abs(b["values"]["Lambda_e_per_nm"]) / (b0["mobility"]["n2DEG_relaxed"] * 1e-14))
+        out["StripWidthBare"] = "%d" % round(abs(b0["predictions_t100"]["bulk-terminated (H, improper)"]["Lambda_e_per_nm"])
+                                            / (b0["mobility"]["n2DEG_relaxed"] * 1e-14))
     if os.path.exists(os.path.join(R, "elwaradi_analysis.json")):
         E = J("elwaradi_analysis.json")
         bare, others, lfit, rms = [], {}, [], []
@@ -312,9 +330,9 @@ def tables():
     L = []
     b0 = sh["baseline"]["77K_mu2_0"]
     b3 = sh["baseline"]["300K_mu2_83"]
-    L.append(r"\begin{table}[h]\caption{\label{tab:shen}Shen \textit{et al.}: measured Hall density"
+    L.append(r"\begin{table}[h]\caption{\label{tab:shen}Series of Shen \textit{et al.}, measured Hall density"
              r" $n_\mathrm{H}$ and mobility $\mu_\mathrm{H}$ (digitized), and the calibrated model"
-             r" for strained barriers: 2DEG density $n_1$ and electrons in the undepleted barrier"
+             r" for strained barriers, 2DEG density $n_1$ and electrons in the undepleted barrier"
              r" $n_2$. Densities in $10^{13}$~cm$^{-2}$, mobilities in cm$^2$V$^{-1}$s$^{-1}$.}")
     L.append(r"\begin{ruledtabular}\begin{tabular}{rcccccccc}")
     L.append(r"$t$ (nm) & \multicolumn{4}{c}{77 K} & \multicolumn{4}{c}{300 K} \\")
@@ -326,7 +344,7 @@ def tables():
             s3["n2DEG_model"] / 1e13, s3["n_barrier_model"] / 1e13))
     L.append(r"\end{tabular}\end{ruledtabular}\end{table}")
     # baseline
-    L.append(r"\begin{table*}[t]\caption{\label{tab:base}Relaxed sample ($t=100$~nm, $R=0.78$):"
+    L.append(r"\begin{table*}[t]\caption{\label{tab:base}Relaxed sample ($t=100$~nm, $R=0.78$),"
              r" calibration, predicted 2DEG density for the three line charges, the measured"
              r" 2DEG density (after removing the parallel channel where $\mu_2>0$), the line charge"
              r" that reproduces it (baseline, and range over $\phi_B=0.5$ to $2$~eV), the mobility"
@@ -383,7 +401,7 @@ def tables():
     if os.path.exists(os.path.join(R, "prb_link.json")):
         P = J("prb_link.json")
         key = "misfit + threading lines, mu_q_H = 95.0"
-        L.append(r"\begin{table}[h]\caption{\label{tab:prb}GaN/AlN hole gas: relaxation $r$ (percent of the"
+        L.append(r"\begin{table}[h]\caption{\label{tab:prb}GaN/AlN hole gas, relaxation $r$ (percent of the"
                  r" mismatch) that misfit lines of charge $\Lambda$ need to supply the in-plane line scattering"
                  r" of Ref.~\onlinecite{Mahim2026} (fit with threading lines at $\mu_{q,H}=95$~cm$^2$V$^{-1}$s$^{-1}$),"
                  r" line spacing of a hexagonal network, and the resulting change of the bound charge relative"
@@ -403,12 +421,12 @@ def tables():
         Hh = J("hiroki_analysis.json")
         best = [k for k in Hh["as_measured"]["0.35"]["phi"]["0.5"]["relaxed"]["85"]["R_needed"]
                 if k.startswith("Shen fraction best")][0]
-        L.append(r"\begin{table*}[t]\caption{\label{tab:hiroki}Series of Hiroki \textit{et al.}: calibration"
+        L.append(r"\begin{table*}[t]\caption{\label{tab:hiroki}Series of Hiroki \textit{et al.}, calibration"
                  r" of each composition on its strained samples (fixed sheet $\delta\sigma$ in $10^{12}$~cm$^{-2}$,"
                  r" rms misfit), model density of a strained barrier of the thickness of the relaxed sample, the"
                  r" measured density (both in $10^{12}$~cm$^{-2}$), and the relaxation $R$ that each line charge needs"
-                 r" to reproduce the measured density (``--'': not reached even at $R=1$). Upper half: room-temperature"
-                 r" densities as measured; lower half: all densities multiplied by the 77~K/room-temperature ratio"
+                 r" to reproduce the measured density (``none'' means not reached even at $R=1$). Upper half, room-temperature"
+                 r" densities as measured; lower half, all densities multiplied by the 77~K/room-temperature ratio"
                  r" measured at $40$~nm.}")
         L.append(r"\begin{ruledtabular}\begin{tabular}{llcccccccc}")
         L.append(r"$x$, $t$ & $\phi_B$ (eV) & $\delta\sigma$ & rms (\%) & strained & measured & bare ends &"
@@ -418,7 +436,7 @@ def tables():
                 for p, v in Hh[tr][xs]["phi"].items():
                     z = v["relaxed"][t]
                     rn = z["R_needed"]
-                    cell = lambda k: ("%.2f" % rn[k]) if rn[k] is not None else "--"
+                    cell = lambda k: ("%.2f" % rn[k]) if rn[k] is not None else "none"
                     L.append("%s, %s~nm & %s & %.2f & %.1f & %.2f & %.2f & %s & %s & %s & %s \\\\" % (
                         xs, t, p, v["dsig_cm2"] / 1e12, 100 * v["rms_log_misfit_coherent"],
                         z["n_coherent_model"] / 1e12, z["n_measured"] / 1e12, cell("bulk-terminated"),

@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.3.0 (2026-11)
+
+- `scripts/run_prediction.py`: splits the charge change on relaxation, per unit
+  2R|eps|, into a part odd in the sign of the mismatch (piezoelectric response
+  and bound core charge) and a part even in it (electrons trapped on the
+  cores). For Al0.3Ga0.7N stretched on GaN and compressed on a GaN channel held
+  at the lattice of AlN, the even part is zero for any bound charge and -q/b
+  for trapped charge q; the sum of the two needs no polarization constant.
+  Also gives the error of q and of Lambda for a given error of the measured
+  interface charge.
+- One more test (the sum rule).
+- Figure text and table captions reworded.
+
 ## 1.2.0 (2026-11)
 
 - New `scripts/run_elwaradi.py` and `data/elwaradi2023_tables.json`: a second

@@ -106,3 +106,15 @@ def test_elwaradi_stack_charge_matches_eq2_on_relaxed_channel():
         eps_c = (gan["a"] - bar["a"]) / bar["a"]
         ref = PZ.sigma_decomposed(bar, gan, Rb, lam, eps_c)
         assert abs(total - ref) < 1e-4 * abs(ref) + 1e-6
+
+
+def test_sum_rule_isolates_trapped_charge():
+    """Charge change per unit 2R|eps|, summed over the same alloy stretched and
+    compressed, is zero for any bound line charge and -2q/b for trapped electrons."""
+    P = json.load(open(os.path.join(ROOT, "results", "prediction.json")))
+    for c, r in P["odd_even_Al0.30"].items():
+        for k in ("bare ends", "neutral", "Shen fraction", "electron counting"):
+            assert abs(r[k]["even_C_m2"]) < 1e-9
+        assert abs(r["trapped (Shen)"]["even_C_m2"] - r["minus_q_over_b_trapped_C_m2"]) < 1e-9
+        # the odd part does not depend on whether the charge is trapped or neutral
+        assert abs(r["trapped (Shen)"]["odd_C_m2"] - r["neutral"]["odd_C_m2"]) < 1e-9

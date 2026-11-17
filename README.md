@@ -9,7 +9,7 @@ and Electronic Engineering, BRAC University). The paper itself is not in
 this repository.
 
 - Repository: https://github.com/Tanvir-Mahmud-Mahim/nitride-misfit-polarization
-- Archived on Zenodo: https://doi.org/10.5281/zenodo.24310457 (version 1.2.0; all versions: https://doi.org/10.5281/zenodo.24297966)
+- Archived on Zenodo: https://doi.org/10.5281/zenodo.24311692 (version 1.3.0; all versions: https://doi.org/10.5281/zenodo.24297966)
 - Companion work (the GaN/AlN hole gas): T. M. Mahim, A. S. M. Mohsin and
   M. M. Rahman, Phys. Rev. B 114, L291304 (2026),
   https://doi.org/10.1103/zn44-nmx8; code at
@@ -50,6 +50,13 @@ test can be made at the same kind of interface as the Shen data: an AlGaN
 barrier on a GaN channel thin enough to keep the lattice of AlN is compressed,
 as in the series of Elwaradi et al. (2023), whose mobility already rules out
 bare line ends for misfit lines of this opposite sign.
+
+A simpler form of the test needs no polarization constant at all. Every
+contribution from polarization, the piezoelectric response and the charge bound
+to the cores, changes sign with the mismatch; electrons trapped on the cores do
+not. Divide the charge change of a stretched and of a compressed layer of the
+same alloy by 2 R |eps_c| and add the two: polarization cancels and only the
+trapped charge remains (`scripts/run_prediction.py`, key `odd_even_Al0.30`).
 
 ## 2. What is in this repository
 

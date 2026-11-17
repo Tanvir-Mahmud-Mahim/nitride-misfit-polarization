@@ -91,6 +91,46 @@ def main():
                                          for k, v in row.items() if isinstance(v, dict) and "slope_cm2_per_unit_R" in v}),
                   "f_zero %.2f" % row["f_zero_relaxed"],
                   "coh %.2f" % (row["coherent_cm2"] / 1e13))
+    # Splitting the relaxation charge by the sign of the mismatch. To first order,
+    # sigma(r) - sigma_coh = 2 r eps (k - f P_H) - 2 r |eps| q / b, with k the proper
+    # piezoelectric combination, f the bound fraction and q >= 0 the trapped charge per
+    # length. Per unit 2 r |eps|, y = s (k - f P_H) - q / b with s the sign of eps. The
+    # same alloy stretched (s = +1) and compressed (s = -1) gives an even part
+    # (y+ + y-)/2 = -q/b, free of all polarization constants, and an odd part
+    # (y+ - y-)/2 = k - f P_H. Al0.3Ga0.7N on relaxed GaN is stretched, Al0.3Ga0.7N on a
+    # GaN channel held at the lattice of AlN is compressed.
+    QE_ = 1.602176634e-19
+    eo = {}
+    for lab in ("PBEsol", "HSE"):
+        t, c = out["cases"]["Al0.30Ga0.70N on GaN"][lab], out["cases"]["Al0.30Ga0.70N on GaN strained to AlN"][lab]
+        r = {}
+        for k in ("bare ends", "neutral", "Shen fraction", "trapped (Shen)", "electron counting"):
+            yp = t[k]["slope_cm2_per_unit_R"] * 1e4 * QE_ / (2 * abs(t["eps_c"]))      # C/m^2
+            ym = c[k]["slope_cm2_per_unit_R"] * 1e4 * QE_ / (2 * abs(c["eps_c"]))
+            r[k] = {"y_stretched_C_m2": yp, "y_compressed_C_m2": ym, "even_C_m2": (yp + ym) / 2, "odd_C_m2": (yp - ym) / 2}
+        a = M.algan(0.30, 300.0, d if lab == "PBEsol" else d_hse)["a"] * 1e-10
+        lam_t = abs(t["trapped (Shen)"]["Lambda_e_per_nm"]) * QE_ * 1e9
+        r["minus_q_over_b_trapped_C_m2"] = -lam_t / a
+        # holography: error of Lambda from an error dsig of the interface charge at
+        # relaxation r of the compressed barrier, dLambda = dsig / L_A
+        L = lambda rr: 2 * rr * abs(c["eps_c"]) / a
+        r["dLambda_e_per_nm_for_dsig_1e-3"] = {str(rr): 1e-3 / L(rr) / QE_ * 1e-9 for rr in (0.25, 0.5)}
+        # error of the trapped charge q from the sum y+ + y- = -2 q / b, with an error
+        # dsig = 1e-3 C/m^2 on each measured charge change and both layers relaxed by rr
+        def dq(rr):
+            e1 = 1e-3 / (2 * rr * abs(t["eps_c"]))
+            e2 = 1e-3 / (2 * rr * abs(c["eps_c"]))
+            return a / 2 * (e1 ** 2 + e2 ** 2) ** 0.5 / QE_ * 1e-9          # e/nm
+        r["dq_e_per_nm_for_dsig_1e-3"] = {str(rr): dq(rr) for rr in (0.25, 0.5)}
+        r["sum_trapped_C_m2"] = 2 * r["minus_q_over_b_trapped_C_m2"]
+        r["q_trapped_e_per_nm"] = lam_t / QE_ * 1e-9
+        eo[lab] = r
+    out["odd_even_Al0.30"] = eo
+    print("odd/even", json.dumps({lab: {k: (round(v["even_C_m2"], 4), round(v["odd_C_m2"], 4)) for k, v in r.items()
+                                        if isinstance(v, dict) and "even_C_m2" in v} for lab, r in eo.items()}))
+    print("q/b", {lab: round(r["minus_q_over_b_trapped_C_m2"], 4) for lab, r in eo.items()},
+          "dLambda", {lab: r["dLambda_e_per_nm_for_dsig_1e-3"] for lab, r in eo.items()},
+          "dq", {lab: r["dq_e_per_nm_for_dsig_1e-3"] for lab, r in eo.items()})
     json.dump(out, open(os.path.join(ROOT, "results", "prediction.json"), "w"), indent=1)
 
 

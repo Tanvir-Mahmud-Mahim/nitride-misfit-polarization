@@ -56,8 +56,8 @@ def fig1():
     ax.text(10.05, (yi + yt) / 2, "[0001]", rotation=90, va="center", fontsize=6.3)
     # line-charge options
     tx = 0.55
-    ax.text(tx, -0.25, r"Charge per length $\Lambda$ of the line: bare end, $|\Lambda| = P_\mathrm{H}\,b$;"
-            "\n" r"bonds filled by electron counting, $|\Lambda| = |P_\mathrm{ZB}|\,b$; neutral line, $\Lambda = 0$",
+    ax.text(tx, -0.25, r"Charge per length of the line, $|\Lambda| = P_\mathrm{H}\,b$ for a bare end,"
+            "\n" r"$|\Lambda| = |P_\mathrm{ZB}|\,b$ for electron counting, $\Lambda = 0$ for a neutral line",
             fontsize=6.3, va="top")
     # (b) bound charge vs relaxation for AlN on GaN (Wang et al.'s example)
     ax2 = fig.add_axes([0.60, 0.17, 0.38, 0.75])
@@ -112,7 +112,7 @@ def fig2():
         m0, m1 = s["central_region_A"]
         zz = np.linspace(m0, m1, 2)
         ax.plot(zz - zm, s["slope_eV_per_A"] * (zz - zm), color="black", lw=0.6, ls="--")
-        txt.append(r"%s: $\sigma=%.3f$, $P_\mathrm{ZB}=%.3f$" % (
+        txt.append(r"%s   $\sigma=%.3f$, $P_\mathrm{ZB}=%.3f$" % (
             name, slab[name]["sigma_from_field_Cm2"][-1],
             pol[name]["P_H"] - 0.75 * pol[name]["quantum_Cm2"]))
     ax.text(0.04, 0.96, "\n".join(txt) + "\n" + r"(C m$^{-2}$)", transform=ax.transAxes, va="top", fontsize=6.3)
