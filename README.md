@@ -9,7 +9,7 @@ and Electronic Engineering, BRAC University). The paper itself is not in
 this repository.
 
 - Repository: https://github.com/Tanvir-Mahmud-Mahim/nitride-misfit-polarization
-- Archived on Zenodo: https://doi.org/10.5281/zenodo.24315036 (version 1.3.1; all versions: https://doi.org/10.5281/zenodo.24297966)
+- Archived on Zenodo, all versions: https://doi.org/10.5281/zenodo.24297966 (version 1.3.1: https://doi.org/10.5281/zenodo.24315036)
 - Companion work (the GaN/AlN hole gas): T. M. Mahim, A. S. M. Mohsin and
   M. M. Rahman, Phys. Rev. B 114, L291304 (2026),
   https://doi.org/10.1103/zn44-nmx8; code at
@@ -37,8 +37,12 @@ charge), the other assumes the lines are neutral. The real charge depends on
 how the broken bonds at the line are filled. Electron counting says they are
 nearly neutral. Published AlGaN/GaN data (Shen et al. 2000, with the
 relaxation measured) show lines carrying about a third of the bare-end
-charge, and a second, independent series (Hiroki et al. 2002) loses more
-electrons on relaxation than neutral lines could remove.
+charge, with an error of about 60 percent, and a second, independent series
+(Hiroki et al. 2002) loses more electrons on relaxation than neutral lines
+could remove. The mobility of the relaxed samples points the same way: for
+lines in random directions it excludes bare ends, and for the straight
+three-direction networks seen in AlGaN/GaN it still favors less than a bare
+end, but no longer excludes it (`scripts/run_line_network_check.py`).
 
 The measured charge may be bound to the line cores or carried by electrons
 trapped on them. In a layer under tension (AlGaN on GaN) both are negative and
@@ -48,7 +52,7 @@ charge of GaN on AlN changes as the GaN relaxes separates the two. The code
 gives the expected rates for each case (`scripts/run_prediction.py`). The
 test can be made at the same kind of interface as the Shen data: an AlGaN
 barrier on a GaN channel thin enough to keep the lattice of AlN is compressed,
-as in the series of Elwaradi et al. (2023), whose mobility already rules out
+as in the series of Elwaradi et al. (2023), whose mobility already disfavors
 bare line ends for misfit lines of this opposite sign.
 
 A simpler form of the test needs no polarization constant at all. Every
@@ -76,12 +80,15 @@ trapped charge remains (`scripts/run_prediction.py`, key `odd_even_Al0.30`).
 | `scripts/run_hiroki.py`, `scripts/run_hiroki_map.py` | The independent series of Hiroki et al. (2002): relaxation each line charge needs, and the line charge allowed by their X-ray map |
 | `scripts/run_elwaradi.py` | The series of Elwaradi et al. (2023): AlGaN/GaN/AlN on bulk AlN with measured relaxation; the barrier on the 20 nm channel relaxed under compression (misfit lines of the opposite sign); density and mobility tests |
 | `scripts/run_jiang.py` | The Shubnikov-de Haas series of Jiang et al. (2001), same design as Shen et al., used as a control |
+| `scripts/run_line_network_check.py` | Mobility limits for a straight three-direction misfit network: exact solution of the Boltzmann equation on the Fermi circle, checked against the random-line kernel |
+| `scripts/run_shen_spacer.py`, `scripts/run_shen_spacer_local.py` | The spacer series of Shen et al. (their Fig. 3), a supporting check |
+| `scripts/run_second_order_check.py` | Size of the second-order terms (exact area dilution, second-order piezoelectricity of Pal et al., Phys. Rev. B 84, 085211 (2011)) |
 | `scripts/run_prediction.py` | The relaxed AlGaN/GaN interface, and the change of interface charge with relaxation for bound and for trapped line charge (GaN on AlN, AlN on GaN, AlGaN on GaN) |
 | `scripts/wordcount.py` | Length of the Letter by the APS rules |
-| `scripts/run_prb_link.py` | What the line charge means for the GaN/AlN hole gas of the PRB paper |
+| `scripts/run_prb_link.py` | What the line charge would mean for the GaN/AlN hole gas of the PRB paper, for randomly oriented lines (kept for reference; no longer used in the paper) |
 | `scripts/run_kp_check.py` | Recomputes the hole gas of the PRB paper with [kpenvelope](https://doi.org/10.5281/zenodo.22015269), an independent six-band solver |
 | `scripts/make_numbers.py` | Writes every number used in the paper into `paper/numbers.tex` |
-| `scripts/figures.py` | The three figures of the Letter and Figs. S1 and S2 (1000 dpi, Times-metric font) |
+| `scripts/figures.py` | The three figures of the Letter and Fig. S1 (Fig. S2, the hole-gas link, is still drawn but no longer used), 1000 dpi, Times-metric font |
 | `data/` | Digitized data and copied published values, each with its source |
 | `dft/pseudo/` | Pseudopotentials and the `ld1.x` inputs that generate them |
 | `dft/dft_runs.tar.gz` | Every DFT input and output file (`tar xzf dft/dft_runs.tar.gz -C dft` restores `dft/runs/`; wave functions and charge densities are not kept) |
@@ -115,6 +122,10 @@ python3 scripts/run_hiroki.py      # about 30 minutes
 python3 scripts/run_hiroki_map.py
 python3 scripts/run_elwaradi.py    # about 2 hours (python3 scripts/run_elwaradi.py quick: one case)
 python3 scripts/run_jiang.py       # about 10 minutes
+python3 scripts/run_shen_spacer.py  # about 20 minutes
+python3 scripts/run_shen_spacer_local.py   # about 20 minutes
+python3 scripts/run_line_network_check.py && python3 scripts/run_line_network_check.py --shen
+python3 scripts/run_second_order_check.py
 python3 scripts/run_prediction.py
 python3 scripts/run_prb_link.py
 python3 scripts/run_kp_check.py    # about 10 minutes (needs kpenvelope)
@@ -135,7 +146,8 @@ profiles, so unpack `dft/dft_runs.tar.gz` first.
 - Shen, Someya and Arakawa, Appl. Phys. Lett. 76, 2746 (2000),
   https://doi.org/10.1063/1.126463: the AlGaN/GaN densities and mobilities,
   read from their Fig. 2 (`data/shen2000_fig2_digitized.json`, with the
-  method), and the structure, doping and relaxation from their text.
+  method), and the structure, doping and relaxation from their text. Their
+  Fig. 3, the spacer series, is in `data/shen2000_fig3_digitized.json`.
 - Hiroki, Maeda and Kobayashi, J. Cryst. Growth 237-239, 956 (2002),
   https://doi.org/10.1016/S0022-0248(01)02020-6: densities of AlGaN/GaN
   barriers of increasing thickness (Figs. 2 and 3) and the X-ray map of
@@ -154,6 +166,13 @@ profiles, so unpack `dft/dft_runs.tar.gz` first.
   https://doi.org/10.1063/1.1600519, and Ambacher et al., J. Appl. Phys. 87,
   334 (2000), https://doi.org/10.1063/1.371866: lattice constants, band gaps,
   masses, dielectric constants and band offset (`src/nmp/materials.py`).
+- Floro et al., J. Appl. Phys. 96, 7087 (2004),
+  https://doi.org/10.1063/1.1812361: shape of the misfit network in
+  AlGaN/GaN (long straight lines along three directions), used for the
+  network mobility check.
+- Pal et al., Phys. Rev. B 84, 085211 (2011),
+  https://doi.org/10.1103/PhysRevB.84.085211: second-order piezoelectric
+  coefficients of their Table I (in `scripts/run_second_order_check.py`).
 - Mahim, Mohsin and Rahman, Phys. Rev. B 114, L291304 (2026): the line
   scattering fitted to the GaN/AlN hole gas (`data/prb2026_misfit_fit.json`,
   copied from its archived results), and its self-consistent hole
