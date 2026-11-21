@@ -271,6 +271,7 @@ def extra(out):
     if os.path.exists(os.path.join(R, "shen_uncertainty.json")):
         b = J("shen_uncertainty.json")["phi"]["0.5"]["fit_B"]
         out["LamOneSigLo"] = f(abs(b["values"]["Lambda_e_per_nm"]) - b["sigma"]["Lambda_e_per_nm"], 1)
+        out["LamOneSigHi"] = f(abs(b["values"]["Lambda_e_per_nm"]) + b["sigma"]["Lambda_e_per_nm"], 1)
         b0 = J("shen_analysis.json")["baseline"]["77K_mu2_0"]
         out["LineSpacing"] = "%d" % (10 * round(b0["line_spacing_nm_hexagonal"] / 10))
         out["StripWidth"] = "%d" % round(abs(b["values"]["Lambda_e_per_nm"]) / (b0["mobility"]["n2DEG_relaxed"] * 1e-14))
@@ -318,6 +319,56 @@ def extra(out):
         c = {r["t_nm"]: r for r in Jg["comparison"]}
         out["JiangHundred"] = f(c[100]["jiang_SdH_1.4K"] / 1e13, 2)
         out["ShenHundred"] = f(c[100]["shen_Hall_77K"] / 1e13, 2)
+    # straight three-direction misfit network (scripts/run_line_network_check.py)
+    if os.path.exists(os.path.join(R, "line_network_check.json")):
+        Nw = J("line_network_check.json")
+        rat = [c["tau_network_over_kernel_N2400"] for c in Nw["cases"]]
+        out["NetTauLo"], out["NetTauHi"] = f(min(rat), 1), f(max(rat), 1)
+        out["NetDirCheck"] = "%d" % round(100 * max(abs(c["tau_24_directions_over_kernel"] - 1) for c in Nw["cases"]))
+        sh = Nw["shen"]
+        out["LamMobNet"] = f(sh["77K_mu2_0"]["strict_network"], 1)
+        sn = [v["strict_network"] for v in sh.values()]
+        out["LamMobNetLo"], out["LamMobNetHi"] = f(min(sn), 1), f(max(sn), 1)
+        e77 = [x for k, v in sh.items() if k.startswith("77K") for x in v["estimate_network_with_background"]]
+        out["LamMobNetEstLo"], out["LamMobNetEstHi"] = f(min(e77), 1), f(max(e77), 1)
+        fac = [v["strict_network"] / v["strict_kernel"] for v in sh.values()]
+        el = Nw["elwaradi"]
+        fac += [v["strict_network"] / v["strict_kernel"] for v in el.values()]
+        out["NetFacLo"], out["NetFacHi"] = f(min(fac), 1), f(max(fac), 1)
+        out["ElwMobNetLo"] = f(min(v["strict_network"] for v in el.values()), 1)
+        out["ElwMobNetHi"] = f(max(v["strict_network"] for v in el.values()), 1)
+        out["ElwMobNetEstLo"] = f(min(v["estimate_network_with_background"] for v in el.values()), 1)
+        out["ElwMobNetEstHi"] = f(max(v["estimate_network_with_background"] for v in el.values()), 1)
+    # second order in the cell area: exact dilution (1 + e)^-2 against its linear form
+    def geo(eps_c, r):
+        e1, e2 = eps_c, (1 - r) * eps_c
+        return abs(((1 + e2) ** -2 - (1 + e1) ** -2) / (-2 * (e2 - e1)) - 1)
+    dd = M.dft()
+    g0, f22, f1 = M.algan(0.0, 300.0, dd), M.algan(0.22, 300.0, dd), M.algan(1.0, 300.0, dd)
+    out["GeoShen"] = f(100 * geo((g0["a"] - f22["a"]) / f22["a"], 0.78), 1)
+    out["GeoAlN"] = f(100 * geo((g0["a"] - f1["a"]) / f1["a"], 0.5), 1)
+    if os.path.exists(os.path.join(R, "second_order_check.json")):
+        so = J("second_order_check.json")
+        out["SecondShen"] = f(100 * max(v["ratio_to_bare_end_term"] for v in so[0]["results"].values()), 1)
+        out["SecondAlN"] = f(100 * max(v["ratio_to_bare_end_term"] for v in so[1]["results"].values()), 1)
+    if os.path.exists(os.path.join(R, "shen_spacer_analysis.json")):
+        sp = J("shen_spacer_analysis.json")["cases"]
+        c77 = [v for k, v in sp.items() if k.startswith("77K")]
+        out["SpacerRms"] = "%d" % round(100 * max(v["prediction_rms_log_misfit"] for v in c77))
+        out["SpacerDrop"] = "%d" % round(100 * (1 - c77[0]["samples"][6]["n2DEG_from_data"]
+                                               / c77[0]["samples"][0]["n2DEG_from_data"]))
+        rb = [v["s50"][cal]["bulk-terminated (H, improper)"]["R_needed"] for v in c77 for cal in v["s50"]]
+        rf = [v["s50"][cal]["line charge of the thickness series"]["R_needed"] for v in c77 for cal in v["s50"]]
+        mb = [v["s50"][cal]["bulk-terminated (H, improper)"]["mobility_strict_bound_e_per_nm"]
+              for v in c77 for cal in v["s50"]]
+        loc = J("shen_spacer_local.json")
+        rb += [v["bulk-terminated (H, improper)"] for v in loc.values()]
+        rn = [v["neutral lines"] for v in loc.values()]
+        mb += [sc[2] for v in loc.values() for sc in v["scan"] if abs(sc[0] + 2.645) < 1e-6]
+        out["SpacerRBareLo"], out["SpacerRBareHi"] = f(min(rb), 2), f(max(rb), 2)
+        out["SpacerRFitLo"], out["SpacerRFitHi"] = f(min(rf), 2), f(max(rf), 2)
+        out["SpacerRNeutLo"], out["SpacerRNeutHi"] = f(min(rn), 2), f(max(rn), 2)
+        out["SpacerMobBareLo"], out["SpacerMobBareHi"] = f(min(mb), 1), f(max(mb), 1)
 
 
 if __name__ == "__main__":
@@ -397,8 +448,9 @@ def tables():
             cells += ["%.2f" % lf if lf is not None else "none", "%.2f" % s["Lambda_strict_upper_bound_e_per_nm"]]
         L.append(lab + " & " + " & ".join(cells) + r" \\")
     L.append(r"\end{tabular}\end{ruledtabular}\end{table*}")
-    # PRB link
-    if os.path.exists(os.path.join(R, "prb_link.json")):
+    # PRB link: kept in results/prb_link.json, no longer printed in the Supplemental
+    # Material (its conversion assumes randomly oriented lines; see CHANGELOG 1.4.0)
+    if False and os.path.exists(os.path.join(R, "prb_link.json")):
         P = J("prb_link.json")
         key = "misfit + threading lines, mu_q_H = 95.0"
         L.append(r"\begin{table}[h]\caption{\label{tab:prb}GaN/AlN hole gas, relaxation $r$ (percent of the"

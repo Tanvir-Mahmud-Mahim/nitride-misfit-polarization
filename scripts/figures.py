@@ -235,7 +235,8 @@ def fig1():
     axf = fig.add_axes([fx0, 3.3 / HA, fx1 - fx0, 13.4 / HA])
     rows = [("bare end (H recipe)", lam["bulk-terminated (H, improper)"], None, C["bulk"], "v"),
             ("measured (Shen density)", float(N["LamLP"]), float(N["LamLPsig"]), "black", "o"),
-            ("allowed by the mobility", None, float(N["LamMobStrictBase"]), C["fit"], None),
+            ("allowed by the mobility", None,
+             (float(N["LamMobStrictBase"]), float(N["LamMobNet"])), C["fit"], None),
             ("electron counting", lam["electron counting"], None, C["ecr"], "^"),
             ("neutral (ZB recipe)", lam["neutral lines"], None, C["neutral"], "s")]
     xl = (-3.2, 1.6)
@@ -244,7 +245,10 @@ def fig1():
         yy = -k
         axf.axhline(yy, color="0.85", lw=0.5, zorder=0)     # row guide; rows are cases, not values
         if mk is None:
-            axf.plot([-e, min(e, xl[1])], [yy, yy], color=col, lw=3.0, alpha=0.45, solid_capstyle="butt")
+            e1, e2 = e
+            axf.plot([max(-e2, xl[0]), min(e2, xl[1])], [yy, yy], color=col, lw=3.0, alpha=0.2,
+                     solid_capstyle="butt")
+            axf.plot([-e1, min(e1, xl[1])], [yy, yy], color=col, lw=3.0, alpha=0.5, solid_capstyle="butt")
         elif e is not None:
             axf.errorbar(v, yy, xerr=e, fmt=mk, color=col, ms=3.4, mfc="white", capsize=1.5, elinewidth=0.7)
         else:
@@ -290,25 +294,25 @@ def fig1():
          f"predicted {N['PredBulkSeventySeven']} for bare ends\n"
          f"and {N['PredNeutralSeventySeven']} for neutral lines", reg=boxes)
     _box(axb, xs[2], y1, bw, h1, C["fit"], "mobility, two series",
-         f"$|\\Lambda|\\leq{N['LamMobStrictBase']}$ e nm$^{{-1}}$ (Shen),\n"
-         f"$|\\Lambda|\\leq{N['ElwMobStrictLo']}$ to ${N['ElwMobStrictHi']}$ e nm$^{{-1}}$\n"
-         "(Elwaradi, compressed)",
-         f"Shen at 77 K; bare ends\nwould carry {N['LamBulkAlGaN']} and {N['ElwLamBare']}", reg=boxes)
+         f"Shen, $|\\Lambda|\\leq{N['LamMobStrictBase']}$ (random\n"
+         f"lines) to {N['LamMobNet']} (straight);\n"
+         f"Elwaradi, {N['ElwMobStrictLo']} to {N['ElwMobNetHi']} e nm$^{{-1}}$",
+         f"bare ends would carry\n{N['LamBulkAlGaN']} and {N['ElwLamBare']} e nm$^{{-1}}$", reg=boxes)
     _box(axb, xs[0], y2, bw, h2, C["ecr"], "nearly neutral ends",
          "electron counting leaves\n"
          f"$|\\Lambda|={N['LamECRAlGaN']}$ e nm$^{{-1}}$, against\n"
          f"{N['LamBulkAlGaN']} e nm$^{{-1}}$ for a bare end",
          "ideal faces, not real\ndislocations", reg=boxes)
-    _box(axb, xs[1], y2, bw, h2, dark, "partly filled",
+    _box(axb, xs[1], y2, bw, h2, dark, "partly charged",
          f"$\\Lambda={N['LamLP']}\\pm{N['LamLPsig']}$ e nm$^{{-1}}$,\n"
          f"about a third (${N['FracLP']}\\pm{N['FracLPsig']}$)\n"
          "of the bare-end charge",
          f"neutral lines {N['NeutralSig']} standard\n"
          "deviations away; Hiroki loss\nexceeds neutral lines alone", reg=boxes)
-    _box(axb, xs[2], y2, bw, h2, C["bulk"], "bare ends ruled out",
-         "the H recipe fails in\nstretched (Shen) and\ncompressed (Elwaradi)",
-         f"they would scatter at least\n{N['ElwScat']} times too strongly (both);\n"
-         "the Shen density agrees", reg=boxes)
+    _box(axb, xs[2], y2, bw, h2, C["bulk"], "bare ends disfavored",
+         "mobility estimates in\nstretched and compressed\nlayers fall below it",
+         f"Shen density puts them\n{N['BulkSigLo']} to {N['BulkSig']} standard\n"
+         "deviations away", reg=boxes)
     arrows = ((0, 0, 0.62, 0.62), (1, 1, 0.62, 0.62), (2, 2, 0.62, 0.62))
     for a_, b_, fa_, fb_ in arrows:
         axb.add_patch(FancyArrowPatch((xs[a_] + fa_ * bw, y1 - 0.1), (xs[b_] + fb_ * bw, y2 + h2 + 0.1),
