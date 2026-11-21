@@ -1,0 +1,62 @@
+{
+ "source": "B. Shen, T. Someya and Y. Arakawa, Appl. Phys. Lett. 76, 2746 (2000), doi:10.1063/1.126463, Fig. 3: 2DEG mobility (solid circles) and sheet concentration (open circles) of Al0.22Ga0.78N/GaN heterostructures versus the thickness of the undoped Al0.22Ga0.78N spacer, (a) 300 K and (b) 77 K. The Si-doped Al0.22Ga0.78N barrier is 25 nm thick in all samples (text).",
+ "method": "Symbol centres located as connected components of the embedded 1-bit figure image of the published PDF (900 x 1084 pixels, page 3), axes calibrated by straight-line fits to the major tick marks of each panel (largest calibration residual 2.4 and 6.3 cm^2/Vs on the left axes, 0.002e13 cm^-2 on the right axes, 0.11 nm on the thickness axes). At 77 K the symbols of the 5 nm and 50 nm samples overlap; their centres were taken 9.5 px (half a symbol diameter) from the outer edges of the merged component, the filled disk being the lower one in both cases. The thickness positions fall on the nominal values within 0.12 nm. Checks: the 3 nm sample is the 25 nm sample of Fig. 2 (same structure); its values here (1.713e13, 912; 1.293e13, 2740) agree with Fig. 2 (1.727e13, 911; 1.302e13, 2727) within 1 percent. The text quotes about 1250 cm^2/Vs (300 K) and 4490 cm^2/Vs (77 K) for spacers of 10 to 30 nm, and a maximum of 1274 (300 K) and 4495 (77 K); the readings give 1088 to 1285 and 3994 to 4506.",
+ "text_values": {
+  "barrier_nAlGaN_nm": 25,
+  "text_mobility_10_to_30nm_300K": 1250,
+  "text_mobility_10_to_30nm_77K": 4490,
+  "text_max_mobility_300K": 1274,
+  "text_max_mobility_77K": 4495,
+  "text_note": "When the spacer thickness increases to 50 nm, the mobility and sheet concentration become much lower in comparison with the values between 10 and 30 nm (text). Relaxation of this sample (total AlGaN thickness 75 nm) was not measured; the critical thickness of the whole barrier is between 68 and 78 nm (Fig. 2 series, total thickness)."
+ },
+ "spacer_nm": [
+  0,
+  3,
+  5,
+  10,
+  15,
+  20,
+  30,
+  50
+ ],
+ "ns_300K_1e13cm2": [
+  1.815,
+  1.713,
+  1.308,
+  1.14,
+  1.157,
+  1.035,
+  1.018,
+  0.64
+ ],
+ "mu_300K_cm2Vs": [
+  506,
+  912,
+  1101,
+  1228,
+  1198,
+  1285,
+  1088,
+  750
+ ],
+ "ns_77K_1e13cm2": [
+  1.432,
+  1.293,
+  1.123,
+  0.884,
+  0.888,
+  0.865,
+  0.795,
+  0.501
+ ],
+ "mu_77K_cm2Vs": [
+  1049,
+  2740,
+  3374,
+  4455,
+  3994,
+  4506,
+  4480,
+  1492
+ ]
+}
