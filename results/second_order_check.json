@@ -1,0 +1,48 @@
+[
+ {
+  "name": "Shen Al0.22Ga0.78N on GaN, r = 0.78",
+  "x": 0.22,
+  "eps_c": 0.0053403781769575465,
+  "r": 0.78,
+  "results": {
+   "nu=0.510": {
+    "dQ_Cm2": -7.406842832371677e-05,
+    "ratio_to_bare_end_term": 0.006654699480913066,
+    "ratio_to_first_order_piezo": 0.012141955167286672
+   },
+   "nu=0.500": {
+    "dQ_Cm2": -7.713257196463517e-05,
+    "ratio_to_bare_end_term": 0.006929998357345868,
+    "ratio_to_first_order_piezo": 0.012644256830170002
+   },
+   "nu=0.600": {
+    "dQ_Cm2": -4.526149418700128e-05,
+    "ratio_to_bare_end_term": 0.004066532106705201,
+    "ratio_to_first_order_piezo": 0.007419666457901677
+   }
+  }
+ },
+ {
+  "name": "AlN on GaN, r = 0.5",
+  "x": 1.0,
+  "eps_c": 0.024742930591259624,
+  "r": 0.5,
+  "results": {
+   "nu=0.605": {
+    "dQ_Cm2": 0.00038099614049541216,
+    "ratio_to_bare_end_term": 0.011551588267034792,
+    "ratio_to_first_order_piezo": 0.013262164007278759
+   },
+   "nu=0.500": {
+    "dQ_Cm2": -0.0004114068767718944,
+    "ratio_to_bare_end_term": 0.01247362465277485,
+    "ratio_to_first_order_piezo": 0.014320736861996865
+   },
+   "nu=0.600": {
+    "dQ_Cm2": 0.00033968616901322357,
+    "ratio_to_bare_end_term": 0.010299093212190693,
+    "ratio_to_first_order_piezo": 0.011824197690296105
+   }
+  }
+ }
+]

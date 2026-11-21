@@ -1,0 +1,364 @@
+{
+ "description": "The spacer series of Shen, Someya and Arakawa, Appl. Phys. Lett. 76, 2746\n(2000), Fig. 3: a second, independent test from the same paper.",
+ "n_AlGaN_nm": 25.0,
+ "R_max": 0.78,
+ "cases": {
+  "77K_mu2_0": {
+   "T": 77.0,
+   "mu_barrier": 0.0,
+   "phi_B_eV": 0.5,
+   "dsig_series_cm2": -2765339220644.268,
+   "samples": [
+    {
+     "spacer_nm": 0,
+     "n2DEG_model": 11876435702965.176,
+     "n_barrier_model": 119011203692.14333,
+     "n2DEG_from_data": 14320000000000.0,
+     "mu2DEG_from_data": 1049.0
+    },
+    {
+     "spacer_nm": 3,
+     "n2DEG_model": 11694328992521.723,
+     "n_barrier_model": 303664736137.3699,
+     "n2DEG_from_data": 12930000000000.0,
+     "mu2DEG_from_data": 2740.0
+    },
+    {
+     "spacer_nm": 5,
+     "n2DEG_model": 11615917037040.182,
+     "n_barrier_model": 383744583210.5249,
+     "n2DEG_from_data": 11229999999999.998,
+     "mu2DEG_from_data": 3374.0
+    },
+    {
+     "spacer_nm": 10,
+     "n2DEG_model": 11530713910265.602,
+     "n_barrier_model": 470287407304.42914,
+     "n2DEG_from_data": 8840000000000.0,
+     "mu2DEG_from_data": 4455.0
+    },
+    {
+     "spacer_nm": 15,
+     "n2DEG_model": 11497848943957.783,
+     "n_barrier_model": 503676677602.33905,
+     "n2DEG_from_data": 8880000000000.0,
+     "mu2DEG_from_data": 3994.0
+    },
+    {
+     "spacer_nm": 20,
+     "n2DEG_model": 11481715727376.662,
+     "n_barrier_model": 520090640507.54944,
+     "n2DEG_from_data": 8650000000000.0,
+     "mu2DEG_from_data": 4506.0
+    },
+    {
+     "spacer_nm": 30,
+     "n2DEG_model": 11466941270438.998,
+     "n_barrier_model": 535141307555.48663,
+     "n2DEG_from_data": 7950000000000.0,
+     "mu2DEG_from_data": 4480.0
+    },
+    {
+     "spacer_nm": 50,
+     "n2DEG_model": 11457241610263.441,
+     "n_barrier_model": 545034032969.1491,
+     "n2DEG_from_data": 5010000000000.0,
+     "mu2DEG_from_data": 1492.0
+    }
+   ],
+   "prediction_rms_log_misfit": 0.2384387106716305,
+   "prediction_mean_log_misfit": 0.13140272179851817,
+   "dsig_refit_cm2": -4319299334474.814,
+   "refit_rms_log_misfit": 0.1961892368158711,
+   "s50": {
+    "series calibration": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.4837133653148402,
+      "mobility_strict_bound_e_per_nm": 1.2123550018790041,
+      "mu2DEG_from_data": 1492.0,
+      "n2DEG_from_data": 5010000000000.0
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -0.8285862684205224,
+      "R_needed": 0.8694703682773636,
+      "mobility_strict_bound_e_per_nm": 0.9042665362536155,
+      "mu2DEG_from_data": 1492.0,
+      "n2DEG_from_data": 5010000000000.0
+     }
+    },
+    "refit on spacer samples": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.370788279236795,
+      "mobility_strict_bound_e_per_nm": 1.3847164564986356,
+      "mu2DEG_from_data": 1492.0,
+      "n2DEG_from_data": 5010000000000.0
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -0.8285862684205224,
+      "R_needed": 0.6667628070307965,
+      "mobility_strict_bound_e_per_nm": 1.0326143811771387,
+      "mu2DEG_from_data": 1492.0,
+      "n2DEG_from_data": 5010000000000.0
+     }
+    }
+   },
+   "eps_c": 0.0053403781769575465
+  },
+  "77K_mu2_83": {
+   "T": 77.0,
+   "mu_barrier": 83.0,
+   "phi_B_eV": 0.5,
+   "dsig_series_cm2": -2942711675078.0176,
+   "samples": [
+    {
+     "spacer_nm": 0,
+     "n2DEG_model": 11713819275615.725,
+     "n_barrier_model": 107196857338.26746,
+     "n2DEG_from_data": 14303711892063.02,
+     "mu2DEG_from_data": 1049.5725007696333
+    },
+    {
+     "spacer_nm": 3,
+     "n2DEG_model": 11535466320989.168,
+     "n_barrier_model": 286289590811.6064,
+     "n2DEG_from_data": 12912923618113.451,
+     "mu2DEG_from_data": 2741.783271628702
+    },
+    {
+     "spacer_nm": 5,
+     "n2DEG_model": 11457060023601.693,
+     "n_barrier_model": 365897052187.00946,
+     "n2DEG_from_data": 11212226239930.787,
+     "mu2DEG_from_data": 3376.639904913494
+    },
+    {
+     "spacer_nm": 10,
+     "n2DEG_model": 11369730105439.281,
+     "n_barrier_model": 454139780657.9024,
+     "n2DEG_from_data": 8823243502313.406,
+     "mu2DEG_from_data": 4459.188549867118
+    },
+    {
+     "spacer_nm": 15,
+     "n2DEG_model": 11335153557561.75,
+     "n_barrier_model": 489112711590.32983,
+     "n2DEG_from_data": 8859893712422.904,
+     "mu2DEG_from_data": 3998.48178711955
+    },
+    {
+     "spacer_nm": 20,
+     "n2DEG_model": 11317894795388.5,
+     "n_barrier_model": 506601037692.79834,
+     "n2DEG_from_data": 8631518519965.471,
+     "mu2DEG_from_data": 4510.776640728015
+    },
+    {
+     "spacer_nm": 30,
+     "n2DEG_model": 11301841289934.613,
+     "n_barrier_model": 522893296740.3682,
+     "n2DEG_from_data": 7930815786423.143,
+     "mu2DEG_from_data": 4485.364534285074
+    },
+    {
+     "spacer_nm": 50,
+     "n2DEG_model": 11291097839448.35,
+     "n_barrier_model": 533812176093.77014,
+     "n2DEG_from_data": 4952417048120.37,
+     "mu2DEG_from_data": 1500.4014236249382
+    }
+   ],
+   "prediction_rms_log_misfit": 0.23206302923322386,
+   "prediction_mean_log_misfit": 0.11916609724996556,
+   "dsig_refit_cm2": -4333579953186.8115,
+   "refit_rms_log_misfit": 0.19670658710693587,
+   "s50": {
+    "series calibration": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.4734697998232891,
+      "mobility_strict_bound_e_per_nm": 1.2184817311084544,
+      "mu2DEG_from_data": 1497.0933292175,
+      "n2DEG_from_data": 4974971456205.291
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -1.283002485635673,
+      "R_needed": 0.7095319754646838,
+      "mobility_strict_bound_e_per_nm": 0.9953579994748897,
+      "mu2DEG_from_data": 1497.0930520257266,
+      "n2DEG_from_data": 4974973352536.349
+     }
+    },
+    "refit on spacer samples": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.3723532762930163,
+      "mobility_strict_bound_e_per_nm": 1.374000425339864,
+      "mu2DEG_from_data": 1497.0947956246882,
+      "n2DEG_from_data": 4974961424203.048
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -1.283002485635673,
+      "R_needed": 0.5582517668773613,
+      "mobility_strict_bound_e_per_nm": 1.122147648815968,
+      "mu2DEG_from_data": 1497.0935503330834,
+      "n2DEG_from_data": 4974969943504.797
+     }
+    }
+   },
+   "eps_c": 0.0053403781769575465
+  },
+  "300K_mu2_83": {
+   "T": 300.0,
+   "mu_barrier": 83.0,
+   "phi_B_eV": 0.5,
+   "dsig_series_cm2": 1633214210610.2896,
+   "samples": [
+    {
+     "spacer_nm": 0,
+     "n2DEG_model": 15681527441059.158,
+     "n_barrier_model": 781077301514.0648,
+     "n2DEG_from_data": 17915405980924.875,
+     "mu2DEG_from_data": 509.00719713992015
+    },
+    {
+     "spacer_nm": 3,
+     "n2DEG_model": 15449514279040.266,
+     "n_barrier_model": 1049151391975.8195,
+     "n2DEG_from_data": 16948165710394.445,
+     "mu2DEG_from_data": 916.6467156347175
+    },
+    {
+     "spacer_nm": 5,
+     "n2DEG_model": 15356972792251.914,
+     "n_barrier_model": 1156956740571.3748,
+     "n2DEG_from_data": 12912635780534.812,
+     "mu2DEG_from_data": 1107.8336625971256
+    },
+    {
+     "spacer_nm": 10,
+     "n2DEG_model": 15262017426387.768,
+     "n_barrier_model": 1273069506440.7878,
+     "n2DEG_from_data": 11234288300524.816,
+     "mu2DEG_from_data": 1236.7080903840047
+    },
+    {
+     "spacer_nm": 15,
+     "n2DEG_model": 15225619846374.395,
+     "n_barrier_model": 1319939230567.7166,
+     "n2DEG_from_data": 11394065763189.473,
+     "mu2DEG_from_data": 1206.88306787634
+    },
+    {
+     "spacer_nm": 20,
+     "n2DEG_model": 15207288741098.004,
+     "n_barrier_model": 1344221288539.8203,
+     "n2DEG_from_data": 10182595447353.186,
+     "mu2DEG_from_data": 1295.1687711878276
+    },
+    {
+     "spacer_nm": 30,
+     "n2DEG_model": 15189887753777.021,
+     "n_barrier_model": 1367765534982.219,
+     "n2DEG_from_data": 9980188376030.863,
+     "mu2DEG_from_data": 1098.4076700319965
+    },
+    {
+     "spacer_nm": 50,
+     "n2DEG_model": 15177893636405.994,
+     "n_barrier_model": 1384307694792.0728,
+     "n2DEG_from_data": 6113468371688.3,
+     "mu2DEG_from_data": 766.3575202301107
+    }
+   ],
+   "prediction_rms_log_misfit": 0.2857512507800514,
+   "prediction_mean_log_misfit": 0.19500143133135825,
+   "dsig_refit_cm2": -1277383220093.114,
+   "refit_rms_log_misfit": 0.2064565325222912,
+   "s50": {
+    "series calibration": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.695603477760773,
+      "mobility_strict_bound_e_per_nm": 1.6064932462818482,
+      "mu2DEG_from_data": 758.4546655171317,
+      "n2DEG_from_data": 6249441949892.565
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -2.9308698859027738,
+      "R_needed": 0.650226979433217,
+      "mobility_strict_bound_e_per_nm": 1.6616032270548187,
+      "mu2DEG_from_data": 758.4546210813734,
+      "n2DEG_from_data": 6249442727158.677
+     }
+    },
+    "refit on spacer samples": {
+     "bulk-terminated (H, improper)": {
+      "Lambda_e_per_nm": -2.645081574331336,
+      "R_needed": 0.48438420717053826,
+      "mobility_strict_bound_e_per_nm": 1.9251463848384334,
+      "mu2DEG_from_data": 758.4557243181653,
+      "n2DEG_from_data": 6249423429487.2705
+     },
+     "electron counting": {
+      "Lambda_e_per_nm": 0.08508558450058583,
+      "R_needed": null
+     },
+     "neutral lines": {
+      "Lambda_e_per_nm": 0.0,
+      "R_needed": null
+     },
+     "line charge of the thickness series": {
+      "Lambda_e_per_nm": -2.9308698859027738,
+      "R_needed": 0.4529552325498192,
+      "mobility_strict_bound_e_per_nm": 1.9908232883609924,
+      "mu2DEG_from_data": 758.4540733937939,
+      "n2DEG_from_data": 6249452307270.299
+     }
+    }
+   },
+   "eps_c": 0.0053403781769575465
+  }
+ }
+}

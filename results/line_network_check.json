@@ -1,0 +1,95 @@
+{
+ "m_rel": 0.2,
+ "eps_r": 10.4,
+ "cases": [
+  {
+   "n_s_1e13cm2": 0.5,
+   "tau_network_over_kernel": 5.562917256933182,
+   "tau_network_over_kernel_N2400": 5.5629172569378085,
+   "tau_24_directions_over_kernel": 1.0191514780717732,
+   "bound_factor_sqrt": 2.358583739649243
+  },
+  {
+   "n_s_1e13cm2": 0.645,
+   "tau_network_over_kernel": 6.675668122617759,
+   "tau_network_over_kernel_N2400": 6.675668122595459,
+   "tau_24_directions_over_kernel": 1.0233492477550252,
+   "bound_factor_sqrt": 2.583731433914032
+  },
+  {
+   "n_s_1e13cm2": 0.75,
+   "tau_network_over_kernel": 7.468969480983368,
+   "tau_network_over_kernel_N2400": 7.468969480978522,
+   "tau_24_directions_over_kernel": 1.0262947768861808,
+   "bound_factor_sqrt": 2.732941543644599
+  },
+  {
+   "n_s_1e13cm2": 1.0,
+   "tau_network_over_kernel": 9.329246082577008,
+   "tau_network_over_kernel_N2400": 9.3292460825669,
+   "tau_24_directions_over_kernel": 1.0330768270580732,
+   "bound_factor_sqrt": 3.05438145662373
+  },
+  {
+   "n_s_1e13cm2": 1.2,
+   "tau_network_over_kernel": 10.797362286749173,
+   "tau_network_over_kernel_N2400": 10.797362286751536,
+   "tau_24_directions_over_kernel": 1.0383256173160709,
+   "bound_factor_sqrt": 3.285934005233753
+  }
+ ],
+ "shen": {
+  "300K_mu2_83": {
+   "strict_kernel": 1.4179912661218281,
+   "strict_network": 3.392792656569932,
+   "estimate_kernel": [
+    0.6041451235857961,
+    0.7305572900384986
+   ],
+   "estimate_network_with_background": [
+    1.1216049812687314,
+    1.4301906317691422
+   ]
+  },
+  "77K_mu2_0": {
+   "strict_kernel": 1.277806399828856,
+   "strict_network": 3.3014969585528355,
+   "estimate_kernel": [
+    0.9825780572651635,
+    1.0166321645985266
+   ],
+   "estimate_network_with_background": [
+    2.320407891049215,
+    2.4278039865158294
+   ]
+  },
+  "77K_mu2_83": {
+   "strict_kernel": 1.0794506069166785,
+   "strict_network": 2.5867360495383096,
+   "estimate_kernel": [
+    0.8011864998884384,
+    0.8341028988717543
+   ],
+   "estimate_network_with_background": [
+    1.7432831387153047,
+    1.8375272145814108
+   ]
+  }
+ },
+ "elwaradi": {
+  "R_bar_0.2": {
+   "strict_kernel": 1.5498947743384843,
+   "strict_network": 2.8200617681563287,
+   "estimate_kernel": 0.8850522850291672,
+   "estimate_network_with_background": 1.4094095946597063,
+   "bare_e_per_nm": 2.6393344383276034
+  },
+  "R_bar_0.25": {
+   "strict_kernel": 1.3862680293570193,
+   "strict_network": 2.5223340710942477,
+   "estimate_kernel": 0.791614829186695,
+   "estimate_network_with_background": 1.2606317429086797,
+   "bare_e_per_nm": 2.6393344383276034
+  }
+ }
+}
